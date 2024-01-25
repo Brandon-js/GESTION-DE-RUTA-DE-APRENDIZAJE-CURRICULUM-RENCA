@@ -1,0 +1,31 @@
+/*  ABOUT US */
+.contenedor {
+    background-color: #7b7c7b; /* Color de fondo del rectángulo */
+    padding: 20px; /* Espaciado interior del rectángulo */
+    border-radius: 10px; /* Bordes redondeados del rectángulo */
+    margin-bottom: 20px; /* Espacio entre rectángulo e imagen/texto */
+    overflow: hidden; /* Para que el contenido no se salga del rectángulo */
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img {
+    max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    display: block; /* Evitar espacios innecesarios debajo de la imagen */
+    margin-bottom: 20px; /* Espacio entre imagen y texto */
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6; /* Espaciado entre líneas del texto */
+    margin-bottom: 0; /* Eliminar espacio inferior del párrafo */
+
+}
+ 
+h1{
+    text-align:right;
+    margin-bottom: 50px;
+}
+/*  ABOUT US */
