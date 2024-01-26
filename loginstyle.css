@@ -100,7 +100,7 @@ background: #6e6e6e;
 transition: .5s;
 }
 
-.username input:focus ~ label,
+.username input:valid ~ label,
 .username input:focus ~ label{
     top: -5px;
     color: #6e6e6e
@@ -117,7 +117,7 @@ background: #6e6e6e;
 transition: .5s
 }
 
-.contraseña input:focus ~ label,
+.contraseña input:valid ~ label,
 .contraseña input:focus ~ label{
     top: -5px;
     color: #6e6e6e
