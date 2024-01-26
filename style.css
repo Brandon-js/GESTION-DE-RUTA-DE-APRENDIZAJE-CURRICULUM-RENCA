@@ -1,4 +1,17 @@
 /*  ABOUT US */
+<<<<<<< Updated upstream
+=======
+
+#navbar1{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(135, 135, 135);
+    margin-bottom: 100px;
+
+}
+>>>>>>> Stashed changes
 .contenedor {
     background-color: #7b7c7b; /* Color de fondo del rectángulo */
     padding: 20px; /* Espaciado interior del rectángulo */
