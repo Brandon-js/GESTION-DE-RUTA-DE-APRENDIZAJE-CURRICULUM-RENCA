@@ -29,3 +29,20 @@ h1{
     margin-bottom: 50px;
 }
 /*  ABOUT US */
+
+/* FOOTER*/
+a {
+    font-size: 17px;
+}
+p {
+    font-size: 17 px;
+}
+a:hover {
+    color: #03A688 !important;
+}
+i {
+    font-size: 50px;
+}
+
+
+/*FOOTER*/
