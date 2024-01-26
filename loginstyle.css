@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(150deg,#000000, #6e6e6e )
+
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid silver;
+    font-size: 30px;
+
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+form .username{
+    position: relative;
+    border-bottom: 1px solid silver;
+    margin: 30px 0;
+
+}
+
+form .contraseña{
+    position: relative;
+    border-bottom: 1px solid silver;
+    margin: 30px 0;
+
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    
+}
+
+.contraseña input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #c8c8c8;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #c8c8c8;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before{
+content: '';
+position: absolute;
+top: 40px;
+left: 0px;
+width: 100%;
+height: 2px;
+background: #6e6e6e;
+transition: .5s;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+    color: #6e6e6e
+}
+
+.contraseña span::before{
+content: '';
+position: absolute;
+top: 40px;
+left: 0px;
+width: 100%;
+height: 2px;
+background: #6e6e6e;
+transition: .5s
+}
+
+.contraseña input:focus ~ label,
+.contraseña input:focus ~ label{
+    top: -5px;
+    color: #6e6e6e
+}
+
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    color: white;
+    background: #6e6e6e
+
+}
+
+input[type="submit"]:hover{
+    border-color: blue;
+    transition: .5s;
+}
+
+
+input[type="button"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    color: white;
+    background: #6e6e6e
+}
+
+input[type="button"]:hover{
+    border-color: blue;
+    transition: .5s;
+}
