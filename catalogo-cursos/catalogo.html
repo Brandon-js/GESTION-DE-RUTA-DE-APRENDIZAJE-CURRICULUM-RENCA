@@ -59,16 +59,15 @@
 
     <!-- Portada -->
     <div class="container-fluid">
-        <img src="/img/portada_catalogo.jpg" class="img-fluid"
-            id="portada"> <!-- 1920x465 -->
+        <img src="/img/portada_catalogo.jpg" class="img-fluid" id="portada"> <!-- 1920x465 -->
 
 
-        <div class="col-auto position-absolute end-50 bottom-50 translate-middle-y">
+        <div>
+        <div class="" id="prueba">
             <h1>¡ Aprende un nuevo curso ya !</h1>
         </div>
 
-
-        <div class="col-auto position-absolute end-50 top-50 translate-middle-x">
+        <div class="" id="buscador">
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar curso" aria-label="Search">
                 <button class="btn btn-primary" type="submit">Buscar</button>
@@ -76,18 +75,19 @@
         </div>
     </div>
 
+    </div>
     <!-- Iconos -->
-    <div class="container mx-auto">
+    <div class="container mx-auto" id="icon-bar">
         <div class="row">
             <div class="col-10 mx-auto d-flex justify-content-center">
 
-                <div class="col-1 icons justify-content-center" id="icon-1">
+                <div class="col-1 icons justify-content-center" id="icon-1" onclick="informaticaCurso()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 640 512">
                         <path fill="#121b2b"
                             d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z" />
                     </svg>
                 </div>
-                <div class="col-1 icons justify-content-center" id="icon-2">
+                <div class="col-1 icons justify-content-center" id="icon-2" onclick="desarrolloPersonalCurso()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="47" fill="currentColor"
                         class="bi bi-person-arms-up" viewBox="0 0 16 16">
                         <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
@@ -95,14 +95,14 @@
                             d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z" />
                     </svg>
                 </div>
-                <div class="col-1 icons" id="icon-3">
+                <div class="col-1 icons" id="icon-3" onclick="saludCurso()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
                         <path
                             d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
                     </svg>
                 </div>
-                <div class="col-1 icons " id="icon-4">
+                <div class="col-1 icons " id="icon-4" onclick="idiomasCurso()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="bi bi-translate" viewBox="0 0 16 16">
                         <path
@@ -111,28 +111,28 @@
                             d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
                     </svg>
                 </div>
-                <div class="col-1 icons " id="icon-5">
+                <div class="col-1 icons " id="icon-5" onclick="historiaCurso()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                         viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                         <path
                             d="M32 192V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V192c0 10.1-4.7 19.6-12.8 25.6L352 256l16 144H80L96 256 44.8 217.6C36.7 211.6 32 202.1 32 192zm176 96h32c8.8 0 16-7.2 16-16V224c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 8.8 7.2 16 16 16zM22.6 473.4L64 432H384l41.4 41.4c4.2 4.2 6.6 10 6.6 16c0 12.5-10.1 22.6-22.6 22.6H38.6C26.1 512 16 501.9 16 489.4c0-6 2.4-11.8 6.6-16z" />
                     </svg>
                 </div>
-                <div class="col-1 icons " id="icon-6">
+                <div class="col-1 icons " id="icon-6" onclick="matematicasCurso()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50"
                         viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                         <path fill="#000000"
                             d="M282.6 78.1c8-27.3 33-46.1 61.4-46.1H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H344L238.7 457c-3.6 12.3-14.1 21.2-26.8 22.8s-25.1-4.6-31.5-15.6L77.6 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H77.6c22.8 0 43.8 12.1 55.3 31.8l65.2 111.8L282.6 78.1zM393.4 233.4c12.5-12.5 32.8-12.5 45.3 0L480 274.7l41.4-41.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 320l41.4 41.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 365.3l-41.4 41.4c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L434.7 320l-41.4-41.4c-12.5-12.5-12.5-32.8 0-45.3z" />
                     </svg>
                 </div>
-                <div class="col-1 icons " id="icon-7">
+                <div class="col-1 icons " id="icon-7" onclick="cienciaCurso()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                         viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                         <path fill="#12161c"
                             d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z" />
                     </svg>
                 </div>
-                <div class="col-1 icons " id="icon-8">
+                <div class="col-1 icons " id="icon-8" onclick="arteCurso()">
                     <svg class="" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                         viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                         <path fill="#111722"
@@ -147,44 +147,44 @@
 
     <main>
         <!-- FILA 1-->
-        <div class="container-fluid">
-            <h2>Cursos pupulares</h2>
+        <div class="container-fluid mt-5">
+            <h2 id="titulo-curso">Informática</h2>
         </div>
                 
-    <div class="container text-center carrousel slide" id="carrusel-1">
-        <div class="row text-center carrousel-inner">
+    <div class="container text-center">
+        <div class="row text-center">
 
-            <div class="card col-auto m-3" style="width: 18rem;">
+            <div id="card-1" class="card col-auto m-3" style="width: 18rem;">
                 <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
                 <div class="card-body">
-                <h5 class="card-title">Informática</h5>
+                <h5 class="card-title">Excel desde 0</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
 
-            <div class="card col-auto m-3" style="width: 18rem;">
+            <div id="card-2" class="card col-auto m-3" style="width: 18rem;">
                 <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
                 <div class="card-body">
-                <h5 class="card-title">Informática</h5>
+                <h5 class="card-title">HTML para principiantes</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
 
-            <div class="card col-auto m-3" style="width: 18rem;">
+            <div id="card-3" class="card col-auto m-3" style="width: 18rem;">
                 <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
                 <div class="card-body">
-                <h5 class="card-title">Informática</h5>
+                <h5 class="card-title">Introduccion a la programación</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
 
-            <div class="card col-auto m-3" style="width: 18rem;">
+            <div id="card-4" class="card col-auto m-3" style="width: 18rem;">
                 <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
                 <div class="card-body">
-                <h5 class="card-title">Informática</h5>
+                <h5 class="card-title">Redes e Internet</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -193,7 +193,25 @@
 
         </div>
 
+        <!-- CURSO_PORTADA -->
+        <div id="card-5" class="container-fluid card mt-5 mb-5 justify-content-center" style="max-width: 1200px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/img/informatica_icon.jpg" class="img-fluid rounded-start justify-content-center" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Analista de Datos</h5>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium magni nulla fugiat tempora, illum, voluptatum minima sapiente eaque quod ipsam voluptas, iusto ex! Earum illo sit ex, veritatis sapiente laborum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CURSO_PORTADA -->
+
+    
     </main>
+    <script src="catalogo.js"></script>
 </body>
 
 </html>
