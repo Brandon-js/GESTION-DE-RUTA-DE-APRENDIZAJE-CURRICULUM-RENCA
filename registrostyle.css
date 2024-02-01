@@ -1,0 +1,162 @@
+:root {
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+    --color-green:#CEFF24;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    letter-spacing: .05rem;
+}
+
+.extra-large-screen-top-stripe {
+    position: relative;
+    height: 10px;
+}
+
+.stripe-color {
+    position: absolute;
+    height: 100%;
+    width: 20%; 
+    top: 0;
+}
+
+.stripe-color1 {
+    background-color:  #ceff26;
+    left: 0;
+}
+
+.stripe-color2 {
+    background-color: #fd571e; 
+    left: 20%;
+}
+
+.stripe-color3 {
+    background-color: #02edca; 
+    left: 40%;
+}
+
+.stripe-color4 {
+    background-color: #fda22d; 
+    left: 60%;
+}
+
+.stripe-color5 {
+    background-color: #0ab5fd; 
+    left: 80%;
+}
+
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-light)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+
+.btn.btn-primary {
+    background-color: #fda22d;
+    color: #fff;
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: #0ab5fd;
+    color: #fff;
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark);
+}
+
+.form-control {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-dark);
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+}
+
+.register-bg {
+    background-image:url(img/13454553_5252477.svg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: contain;
+    background-position: center center;
+}
+
+/* Modificar el color de los botones de Google */
+.btn-google {
+    background-color: #0F9D58;
+    color: #fff;
+}
+
+/* Modificar el color del hover de los botones de Google */
+.btn-google:hover {
+    background-color: #C0392B;
+    color: #fff; 
+}
+
+/* Modificar el color de los botones de Facebook */
+.btn-facebook {
+    background-color: #3b5998;
+    margin-right: 8px;
+    color: #fff;
+}
+
+/* Modificar el color del hover de los botones de Facebook */
+.btn-facebook:hover {
+    background-color: #2d4373;
+    color: #fff; 
+}
+
+/*modificar el color de los botones de apple*/
+.btn-apple {
+    background-color:black;
+    color: #fff;
+}
+
+/*modificar el color del hover de los botones apple*/
+.btn-apple:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+}
