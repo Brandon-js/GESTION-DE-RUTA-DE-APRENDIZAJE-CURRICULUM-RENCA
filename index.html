@@ -9,13 +9,14 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
    <link href="style.css" rel="stylesheet">
+   <link href="loginstyle.css" rel="stylesheet">
 
 </head>
 
 <body>
 <!-- NAV BAR -->
-<header class="nav-color" id="navbar1">
-    <nav class="nav navbar-expand-lg container-fluid p-2">
+<header class="bg-light" id="header">
+    <nav id="nav-container" class="nav navbar-expand-lg container-fluid p-1">
             <div class="row w-100">
                 <div class="col-3 text-center">
                     <img class="" src="./img/logo-renca.png" width="200" height="60">
@@ -47,8 +48,8 @@
                 
 
                 <div class="col-4 text-end mt-2">
-                    <button type="button" class="btn btn-secondary btn-lg me-3">Iniciar sesión</button>
-                    <button type="button" class="btn btn-primary btn-lg">Regístrate aquí</button>
+                    <button id="log-btn" type="button" class="btn btn-lg me-3">INICIAR SESIÓN</button>
+                    <button id="reg-btn" type="button" class="btn btn-primary btn-lg" onclick="location.href='registro.html'">REGÍSTRATE</button>
                 </div>
             </div>
     </nav>
@@ -57,27 +58,20 @@
 
 <!--INICIO SECCION CARRUSEL-->
     <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col">
+        <div class="row align-items-center">
+            <div class="col-4 ">
                 <div class="col"><br>
                     <!--parrafo de bienvenida-->
-                    <h2>Lorem ipsum</h2>
-                    <p id="pCarrusel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur esse illum
-                        doloribus quibusdam, neque id accusantium quis error dolore molestias, quas doloremque at! Amet
-                        ex reiciendis maiores, incidunt in qui.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos magni quia quo similique! Enim
-                        asperiores odit praesentium officiis facere, incidunt aliquid dolore iusto animi quod, molestiae
-                        neque pariatur quae et.
+                    <h2 id="h2-carrusel">APRENDE CON NOSOTROS</h2>
+                    <p id="pCarrusel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur esse illum.
                     </p>
-                    <div class="col">
-                        <button id="botonCarrusel" type="button" style="margin: 20px" class="btn btn-outline-secondary">VER MÁS
-                            CURSOS</button>
-                        <button id="botonCarrusel " type="button" class="btn btn-outline-secondary">REGÍSTRATE
-                            AHORA</button>
+                    <div class="col d-flex align-items-center">
+                        <button id="botonCarrusel-1" type="button" style="margin: 20px" class="btn btn-primary btn-lg" onclick="location.href='/catalogo-cursos/catalogo.html'">NUESTROS CURSOS</button>
+                        <button id="botonCarrusel-2" type="button" class="btn btn-primary btn-lg " onclick="location.href='registro.html'">¡ÚNETE!</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-8">
                 <!--carrusel de imagenes-->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -90,13 +84,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/640x360" class="d-block w-100" alt="...">
+                            <img id="study_1" src="/img/istockphoto-1394658823-2048x2048.jpg" class="d-block" alt="studying_1">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://via.placeholder.com/640x360" class="d-block w-100" alt="...">
+                            <img id="study_2" src="/img/istockphoto-1394658823-2048x2048.jpg" class="d-block" alt="studying_2">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://via.placeholder.com/640x360" class="d-block w-100" alt="...">
+                            <img id="study_3" src="/img/istockphoto-1394658823-2048x2048.jpg" class="d-block" alt="studying_3">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -115,179 +109,294 @@
     </div>
 <!--FIN SECCION CARRUSEL-->
 
+<!-- DATOS -->
+    <div id="cont-datos" class="container-fluid justify-content-center row">
+      <div class="col-4 row father">
+        <div class="text-end col-6"><h4 id="num-data-1">50</h4></div> <div class="text-center col-6"><h4 class="text-data">CURSOS DISPONIBLES</h4></div>
+      </div>
+
+      <div class="col-4 row father">
+        <div class="text-end col-6"><h4 id="num-data-2">50</h4></div> <div class="text-start col-6"><h4 class="text-data">USUARIOS REGISTRADOS</h4></div>
+      </div>
+
+      <div class="col-4 row father">
+        <div class="text-end col-6"><h4 id="num-data-3">50</h4></div> <div class="text-start col-6"><h4 class="text-data">CURSOS TERMINADOS</h4></div>
+      </div>
+
+    </div>
+
+
+<!-- /DATOS -->
+
+
 <!-- ABOUT US -->
 <div class="container">
     <div class="row contenedor">
         <div class="col-md-6">
-            <img src="https://www.vvc.cl/wp-content/uploads/2016/09/ef3-placeholder-image.jpg" class="mb-3" alt="...">
+            <img class="img-fluid" src="/img/portada_main.jpg" class="mb-3" alt="...">
         </div>
         <div class="col-md-6">
-            <h1>About Us</h1>
-            <p>
-            As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+          <div class="mb-5">
+            <h1 class="text-center" id="about">¿QUIÉNES SOMOS?</h1>
+            <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus inventore possimus sit. Consequatur itaque alias, accusantium sit est ducimus doloremque ullam quos ab recusandae veniam ex facere eaque rem nihil.
             </p>
-            <p>
-            And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
-            </p>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="me-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+            </div>
+            <div class="me-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+            </div>
         </div>
     </div>
 </div>
+</div>
 <!-- ABOUT US -->
 
-  <!-- F.A.Q -->
+  <!-- Cursos populares -->
+  <div class="container">
+    <h2>Cursos populares</h2>
+    <p>Explora los cursos favoritos de nuestros usuarios.</p>
+  </div>
+  <div class="container text-center">
+    <div class="row text-center">
+
+        <div id="card-1" class="card col-auto m-3" style="width: 18rem;">
+            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+            <div class="card-body">
+            <h5 class="card-title">Excel desde 0</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div id="card-2" class="card col-auto m-3" style="width: 18rem;">
+            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+            <div class="card-body">
+            <h5 class="card-title">HTML para principiantes</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div id="card-3" class="card col-auto m-3" style="width: 18rem;">
+            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+            <div class="card-body">
+            <h5 class="card-title">Introduccion a la programación</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div id="card-4" class="card col-auto m-3" style="width: 18rem;">
+            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+            <div class="card-body">
+            <h5 class="card-title">Redes e Internet</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container mt-5">
+      <h2>Nuevos cursos</h2>
+      <p>Explora los cursos más recientes.</p>
+    </div>
+    <div class="container text-center">
+      <div class="row text-center">
+  
+          <div id="card-1" class="card col-auto m-3" style="width: 18rem;">
+              <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+              <div class="card-body">
+              <h5 class="card-title">Excel desde 0</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+  
+          <div id="card-2" class="card col-auto m-3" style="width: 18rem;">
+              <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+              <div class="card-body">
+              <h5 class="card-title">HTML para principiantes</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+  
+          <div id="card-3" class="card col-auto m-3" style="width: 18rem;">
+              <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+              <div class="card-body">
+              <h5 class="card-title">Introduccion a la programación</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+  
+          <div id="card-4" class="card col-auto m-3" style="width: 18rem;">
+              <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+              <div class="card-body">
+              <h5 class="card-title">Redes e Internet</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+  
+    </div>
+    
+    <!-- Aprende a tu ritmo -->
     <div class="container">
-        <div class="container p-3"><h2>Preguntas Frecuentes</h2></div>
-        <div class="accordion" id="accordionExample">
-            <!-- ACORDEON 1-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Lorem Ipsum?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                </div>
-              </div>
-            </div>
-            <!-- ACORDEON 2-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Lorem Ipsum?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                </div>
-              </div>
-            </div>
-            <!-- ACORDEON 3-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Lorem Ipsum?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                </div>
-              </div>
-            </div>
-            <!-- ACORDEON 4-->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Lorem Ipsum
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                  </div>
-                </div>
-              </div>
-              <!-- ACORDEON 5-->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Lorem Ipsum
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                  </div>
-                </div>
-              </div>
-              <!-- ACORDEON 6-->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Lorem Ipsum
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                  </div>
-                </div>
-              </div>
-          </div>
-    </div>
-  <!-- F.A.Q END -->
-
-  <!--footer-->
-  <footer class="bg-light text-dark pt-5 pb-4">
-    <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
-
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-primary"></h5>
-            <hr class=" mb-4">
-            <ul class="list-unstyled list-inline">
-
-              <li class="list-inline-item">
-                 <a href="#" class="text-dark"> <i class="fab fa-facebook"></i></a>
-              </li> 
-              <li class="list-inline-item">
-                 <a href="#" class="text-dark"> <i class="fab fa-twitter"></i></a>
-              </li>  
-              <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class="fab fa-google-plus"></i></a>
-              </li> 
-              
-
-           </ul>
-            
-          </div>
-
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold">Contactanos</h5>
-              <hr class=" mb-4">
-              <p>
-                <li class="fas fa-home me-3"></li>  Blanco Encalada Nº 1335, Plaza de Renca, Renca.
-              </p>
-              <p>
-                <li class="fas fa-envelope me-3"></li> contacto@renca.cl
-              </p>
-              <p>
-                <li class="fas fa-phone me-3"></li> +56 2 2685 6600
-              </p>
-              <p>
-            
+      <div class="row contenedor">
           
+          <div class="col-md-6">
+            <div>
+              <h1 class="text-center" id="about">APRENDE A TU RITMO</h1>
+              <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus inventore possimus sit. Consequatur itaque alias, accusantium sit est ducimus doloremque ullam quos ab recusandae veniam ex facere eaque rem nihil.
+              </p>
+              <div class="text-center">
+              <button id="boton-reg" type="button" style="margin: 20px" class="btn btn-primary btn-lg " onclick="location.href='registro.html'">¡QUIERO REGISTRARME!</button></div>
             </div>
+          </div>
 
-            <hr class="mb-4">
-
-            <div class="text-center mb-2">
-                <p>
-                    Copyright Todos los derechos reservados
-                    <a href="#">
-                        <strong class="text-primary">Test</strong>
-                    </a>
-                </p>
-
-            </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/portada_main.jpg" class="mb-3" alt="...">
+        </div>
+      </div>
+  </div>
 
 
-        </div>         
+  <!-- footer-->
+
+  <footer>
+    <div class="container-fluid row">
+
+
+    <div class="col-5 row mx-auto justify-content-center align-items-center">
+      <div id="bar-1"></div>
+      <div id="bar-2"></div>
+      <div id="bar-3"></div>
+      <div id="bar-4"></div>
+      <div id="bar-5"></div>
+    </div>
+
+    <div class="container-fluid col-2 text-center">
+      <div class="text-center">
+      <img class="img-fluid mx-auto" id="logo-renca" src="/img/logo-renca.png">
+        </div>
+    </div>
+    <div class="col-5 row mx-auto justify-content-center align-items-center">
+      <div id="bar-5"></div>
+      <div id="bar-4"></div>
+      <div id="bar-3"></div>
+      <div id="bar-2"></div>
+      <div id="bar-1"></div>
+    </div>
 
 
     </div>
 
+    <div id="foot-cont" class="container-fluid row mt-4">
 
-</footer>
 
+      <div class="col-5 row mx-auto justify-content-center align-items-center">
+        <div class="mx-auto text-center">
+        <p>Blanco Encalada N*1335, Plaza de Renca, Renca.</p>
+        <p>+56 2 2685 6600</p>
+        <p>contacto@renca.cl</p>
+        <p>Lunes a viernes de 08:30 a 14:00 horas<br>15:00 a 17:00 horas.</p>
+        </div>
+      </div>
+  
+      <div class="container-fluid col-2 text-center ">
+        <div class="text-center mx-auto">
 
+          <ul class="list-unstyled list-inline">
+
+            <li class="list-inline-item">
+               <a href="#" class="text-dark"> <i class="fab fa-facebook"></i></a>
+            </li> 
+            <li class="list-inline-item">
+               <a href="#" class="text-dark"> <i class="fab fa-twitter"></i></a>
+            </li>  
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"> <i class="fab fa-google-plus"></i></a>
+            </li> 
+            
+        </ul>
+
+          </div>
+      </div>
+      <div class="col-5 row mx-auto justify-content-center align-items-center">
+        <div id="foot-r" class="mx-auto text-center">
+          <p class="foot-r">Preguntas Frecuentes</p>
+          <p class="foot-r">Explora nuestros cursos</p>
+          <p class="foot-r">Sobre Nosotros</p>
+          <p>Contáctanos</p>
+        </div>
+      </div>
+      </div>
+
+      <div id="foot-cont" class="container text-center mt-5">
+        <p>© 2024 Ilustre Municipalidad de Renca</p>
+      </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <!-- Modal de inicio de sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Ingresa tus datos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulario">
+        </div class="mb-3">
+          <form method="post">
+              <div class="username">
+                  <input type="text" required>
+                  <label for="username">Nombre de usuario</label>
+              </div>
+              <div class="contraseña">
+                  <input type="password" required>
+                  <label for="contraseña">Contraseña</label>
+              </div>
+              <div class="recordar">¿Olvidaste tu contraseña?</div>
+              <input type="submit" value="Iniciar sesión">
+              <div class="registrarse">
+                  <input type="button" value="Crear cuenta">
+              </div>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--FINAL MODAL DE INICIO DE SESION!-->
+
+
 </body>
 </html>
+
+<!-- Credits:
+<a href="https://www.freepik.com/free-vector/education-learning-concept-love-reading-people-reading-students-studying-preparing-examination-library-book-lovers-readers-modern-literature-flat-cartoon-vector-illustration_25273862.htm#page=2&query=student%20study&position=37&from_view=keyword&track=ais&uuid=c7f424f7-44e3-417a-ba1f-3d1263ca404d">Image by jcomp</a> on Freepik
+
+<a href="https://www.freepik.com/free-vector/learning-concept-illustration_10117870.htm#page=2&query=student%20study&position=35&from_view=keyword&track=ais&uuid=c7f424f7-44e3-417a-ba1f-3d1263ca404d#position=35&page=2&query=student%20study">Image by storyset</a> on Freepik
+
+<a href="https://www.freepik.com/free-vector/webinar-concept-illustration_18737137.htm#query=online%20student&position=22&from_view=search&track=ais&uuid=96322616-b395-4404-b50d-b251765cc33b">Image by storyset</a> on Freepik
+-->

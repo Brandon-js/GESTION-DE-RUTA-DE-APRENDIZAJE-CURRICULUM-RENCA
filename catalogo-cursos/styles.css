@@ -1,0 +1,65 @@
+.icons {
+    background-color: #ffffff ;
+    padding: 30px;
+    box-shadow: 0px 3px 1px #d8d5d5;
+}
+
+
+#icon-1:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #ceff26;
+}
+#icon-2:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #fd571e;
+}
+#icon-3:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #02edca;
+}
+#icon-4:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #fda22d;
+}
+#icon-5:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #0ab5fd;
+}
+#icon-6:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #02edca;
+}
+#icon-7:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #fd571e;
+}
+#icon-8:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: #ceff26;
+}
+
+#prueba {
+    position: absolute; 
+    top: 240px;
+    left: 290px;
+}
+
+#buscador {
+    position: absolute;
+    top: 430px;
+    left: 400px;
+}
+
+#icon-bar{
+    position:absolute;
+    top: 600px;
+    left: 275px
+}
