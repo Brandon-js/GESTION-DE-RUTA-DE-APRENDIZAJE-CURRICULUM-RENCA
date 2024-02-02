@@ -34,7 +34,7 @@ body {
     overflow: hidden;
     transition: all 0.35s ease-in-out;
     margin-left: 70px;
-    background-color: #fafbfe;
+    background-color: #ffffff;
 }
 
 #sidebar {
@@ -68,7 +68,7 @@ body {
 
 .toggle-btn i:hover {
     color: #fda22d
-    }
+}
 
 .sidebar-logo {
     margin: auto 0;
@@ -164,3 +164,58 @@ a.sidebar-link:hover {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+
+.container-fluid {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container {
+    text-align: center; 
+}
+
+.container-fluid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.video-container iframe {
+    width: 100%; /* Make the video container responsive */
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio, adjust as needed */
+    border: 0;
+    border
+}
+
+
+.justify-text {
+    padding-top: 20px;
+    text-align: justify; 
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+.custom-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 50px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fda22d; 
+    color: #fff; 
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+}
+
