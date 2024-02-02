@@ -1,7 +1,7 @@
 
 /*INICIO BOTON LOGIN*/
 
-document.getElementById('loginbutton').addEventListener('click', function() {
+document.getElementById('log-btn').addEventListener('click', function() {
     // Crea una instancia del modal de inicio de sesión y lo muestra
     var myModal = new bootstrap.Modal(document.getElementById('loginModal'));
     myModal.show();
