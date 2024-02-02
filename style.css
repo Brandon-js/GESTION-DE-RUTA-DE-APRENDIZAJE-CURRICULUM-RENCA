@@ -1,3 +1,80 @@
+:root {
+    --primario: #ceff26;
+    --secundario: #fd571e;
+    --terciario: #02edca;
+    --cuaternario:#fda22d;
+    --quinario: #0ab5fd;
+}
+/* NAV Y PORTADA */
+#nav-container{
+    border-bottom: black;
+}
+#reg-btn {
+    background-color: var(--cuaternario);
+    border-color: var(--cuaternario);
+    box-shadow: 0px 3px 1px #d8d5d5;
+    font-weight: bold;
+}
+
+#botonCarrusel-1 {
+    background-color: var(--secundario);
+    border-radius: 15px;
+    border-color: var(--secundario);
+    box-shadow: 0px 3px 1px #d8d5d5;
+    font-weight: bold;
+}
+#botonCarrusel-2 {
+    background-color: var(--terciario);
+    border-color: var(--terciario);
+    box-shadow: 0px 3px 1px #d8d5d5;
+    font-weight: bold;
+}
+#study_1 {
+    width: 1000px;
+}
+#study_2 {
+    width: 1000px;
+}
+#study_3 {
+    width: 1000px;
+}
+
+/* DATOS */
+#cont-datos {
+    background-color: var(--quinario);
+    padding: 50px;
+
+}
+#num-data-1 {
+    color: var(--secundario);
+    font-size: 100px;
+    text-shadow: 0px 3px 1px #6969698f;
+    font-weight: bold;
+}
+#num-data-2 {
+    color: var(--primario);
+    font-size: 100px;
+    text-shadow: 0px 3px 1px #6969698f;
+    font-weight: bold;
+}
+#num-data-3 {
+    color: var(--cuaternario);
+    font-size: 100px;
+    text-shadow: 0px 3px 1px #6969698f;
+    font-weight: bold;
+}
+.text-data {
+    color: white;
+
+}
+.father {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 /*  ABOUT US */
 
 #navbar1{
@@ -9,19 +86,18 @@
     margin-bottom: 50px;
 }
 .contenedor {
-    background-color: #7b7c7b; /* Color de fondo del rectángulo */
     padding: 20px; /* Espaciado interior del rectángulo */
     border-radius: 10px; /* Bordes redondeados del rectángulo */
-    margin-bottom: 50px; /* Espacio entre rectángulo e imagen/texto */
+    margin: 70px 20px 50px 20px;
     overflow: hidden; /* Para que el contenido no se salga del rectángulo */
     text-align: justify;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+}
+#about {
+    font-weight: bold;
 }
 
 img {
-    max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+     /* Ajustar la imagen al ancho del contenedor */
     display: block; /* Evitar espacios innecesarios debajo de la imagen */
     margin-bottom: 20px; /* Espacio entre imagen y texto */
     border-radius: 10px;
