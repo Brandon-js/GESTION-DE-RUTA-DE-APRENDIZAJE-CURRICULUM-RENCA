@@ -36,7 +36,7 @@ header{
     background: #FFE000;  /* fallback for old browsers */
     background: linear-gradient(to right, #799F0C, #FFE000); linear-gradient(to right, #789f0c3a, #ffe1004d), url(../img/e-learning.jpg);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #789f0c3a, #ffe1004d), url(../img/ilustracion-extra.png);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #789f0c3a, #ffe1004d), url(../img/Aprender-Excel.webp);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -192,3 +192,61 @@ header .textos-header{
     font-weight: 300;
     text-align: justify;
 }
+/* footer*/
+a {
+    font-size: 17px;
+}
+p {
+    font-size: 17 px;
+}
+a:hover {
+    color: #03A688 !important;
+}
+i {
+    font-size: 50px;
+}
+#logo-renca {
+    width: 200px;
+}
+#bar-1 {
+    background-color: var(--secundario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-2 {
+    background-color: var(--cuaternario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-3 {
+    background-color: var(--primario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-4 {
+    background-color: var(--terciario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-5 {
+    background-color: var(--quinario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#foot-r {
+    text-align: end;
+}
+#foot-cont {
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+.list-inline-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*footer*/
