@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
    <link href="style.css" rel="stylesheet">
+   <link href="loginstyle.css" rel="stylesheet">
 
 </head>
 
@@ -348,6 +349,42 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <!-- Modal de inicio de sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Ingresa tus datos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulario">
+        </div class="mb-3">
+          <form method="post">
+              <div class="username">
+                  <input type="text" required>
+                  <label for="username">Nombre de usuario</label>
+              </div>
+              <div class="contraseña">
+                  <input type="password" required>
+                  <label for="contraseña">Contraseña</label>
+              </div>
+              <div class="recordar">¿Olvidaste tu contraseña?</div>
+              <input type="submit" value="Iniciar sesión">
+              <div class="registrarse">
+                  <input type="button" value="Crear cuenta">
+              </div>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--FINAL MODAL DE INICIO DE SESION!-->
+
+
 </body>
 </html>
 
