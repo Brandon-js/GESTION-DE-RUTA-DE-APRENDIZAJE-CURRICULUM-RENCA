@@ -80,7 +80,7 @@ body {
 }
 
 .btn.btn-primary:hover {
-    background-color: #0ab5fd;
+    background-color: #2E8B57;
     color: #fff;
 }
 
@@ -105,7 +105,7 @@ body {
 
 /* Modificar el color de los botones de Google */
 .btn-google {
-    background-color: #0F9D58;
+    background-color: #DB4437;
     color: #fff;
 }
 
