@@ -159,6 +159,17 @@ h1{
     padding: 3px;
 }
 
+/* cursos */
+#prev-1 {
+    background-color: var(--terciario);
+    border-radius: 100%;
+    padding: 20px;
+}
+#next-1 {
+    background-color: var(--terciario);
+    border-radius: 100%;
+    padding: 20px;
+}
 
 /* footer*/
 a {
