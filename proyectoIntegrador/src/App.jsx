@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Boton_1 from '../src/components/boton_1'
+import Boton_1 from '../src/components/botones/boton_1'
 
 const App = () => {
 

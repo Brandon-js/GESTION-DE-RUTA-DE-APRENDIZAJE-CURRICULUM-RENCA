@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/botones.css'
+import '../botones/botones.css'
 
 const Boton_1 = (param,link) => {
     return (
