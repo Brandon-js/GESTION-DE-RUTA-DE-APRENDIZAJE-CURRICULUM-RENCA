@@ -1,7 +1,35 @@
 .btn-primario {
     background-color: #fd571e;
+    margin-right: 1rem;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px;
 }
 .btn-primario:hover {
     border-color: #fd571e;
     background-color: #fd561ee8;
+}
+
+
+.btn-secundario {
+    background-color: #fda22d;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px;
+    margin-left: 20px;
+    
+}
+.btn-secundario:hover {
+    background-color: rgba(218, 140, 38, 0.89);
+    background-color: rgba(218, 140, 38, 0.89);
+}
+
+
+.btn-special {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fd571e;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 0;
+    margin-right: 20px;
 }
