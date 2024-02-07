@@ -1,10 +1,19 @@
 import React from 'react'
+import './Navbar.css'
+import logo from '../../assets/logo-renca.png'
+
 
 const Navbar = () => {
   return (
-    <div className='container'>
-
-    </div>
+    <header>
+        <nav className='nav-style nav navbar-expand-lg container-fluid p-4'>
+            <div className='row'>
+                <div>
+                    <img src={logo} />
+                </div>
+            </div>
+        </nav>
+    </header>
   )
 }
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import Navbar from '../components/navbar/Navbar'
 
 const Front_page = () => {
   return (
-    <Footer/>
+    <Navbar/>
   )
 }
 

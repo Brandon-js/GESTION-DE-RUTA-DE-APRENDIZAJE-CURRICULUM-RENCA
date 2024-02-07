@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import Boton_1 from '../src/components/botones/boton_1'
+import Navbar from './components/navbar/Navbar'
 
 const App = () => {
 
   return (
-      <Boton_1 text='NUESTROS CURSOS'/>
+      <Navbar/>
   )
 
 }
