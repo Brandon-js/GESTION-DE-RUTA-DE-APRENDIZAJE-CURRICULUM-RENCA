@@ -5,10 +5,52 @@
     --cuaternario:#fda22d;
     --quinario: #0ab5fd;
 }
+/* Dark-mode */
+#dark-mode {
+    background-color: #02edca;
+    border-radius: 0%;
+}
+#botones {
+    font-size: 0;
+}
+
+.active-sun {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    width: 60px;
+    background-color: var(--terciario);
+}
+.default-moon {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    width: 60px;
+    border-left: 1px solid transparent
+}
+.active-moon {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.light-mode {
+    background-color: white;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+/* Dark-mode */
+
 /* NAV Y PORTADA */
 #header{
     border-bottom: 1px solid black;
 }
+#log-fat {
+    display: flex;
+    align-items: center;
+}
+
 #log-btn {
     color: var(--secundario);
     font-weight: bold;
@@ -159,6 +201,22 @@ h1{
     padding: 3px;
 }
 
+/* cursos */
+
+#prev-1 {
+    background-color: var(--terciario);
+    border-radius: 100%;
+    padding: 20px;
+}
+#next-1 {
+    background-color: var(--terciario);
+    border-radius: 100%;
+    padding: 20px;
+}
+.btn-ren {
+    background-color: var(--secundario);
+    color: white;
+}
 
 /* footer*/
 a {
