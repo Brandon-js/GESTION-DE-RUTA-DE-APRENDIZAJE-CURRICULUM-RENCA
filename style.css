@@ -5,29 +5,101 @@
     --cuaternario:#fda22d;
     --quinario: #0ab5fd;
 }
+/* Dark-mode */
+#dark-mode {
+    background-color: #02edca;
+    border-radius: 0%;
+}
+#botones {
+    font-size: 0;
+}
+
+.active-sun {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    width: 60px;
+    background-color: var(--terciario);
+}
+.default-moon {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    width: 60px;
+    border-left: 1px solid transparent
+}
+.active-moon {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.light-mode {
+    background-color: white;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+/* Dark-mode */
+
 /* NAV Y PORTADA */
-#nav-container{
-    border-bottom: black;
+#header{
+    border-bottom: 1px solid black;
+}
+#log-fat {
+    display: flex;
+    align-items: center;
+}
+
+#log-btn {
+    color: var(--secundario);
+    font-weight: bold;
 }
 #reg-btn {
     background-color: var(--cuaternario);
     border-color: var(--cuaternario);
+    border-radius: 15px;
     box-shadow: 0px 3px 1px #d8d5d5;
     font-weight: bold;
 }
 
+#reg-btn:hover{
+    background-color: #e09225;
+}
+
+
+#h2-carrusel {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#pCarrusel {
+    margin-bottom: 50px;
+}
+.div-pad{
+    display: flex;
+    align-items: center;
+}
 #botonCarrusel-1 {
     background-color: var(--secundario);
     border-radius: 15px;
     border-color: var(--secundario);
     box-shadow: 0px 3px 1px #d8d5d5;
     font-weight: bold;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: normal;
+    padding: 3px;
 }
 #botonCarrusel-2 {
     background-color: var(--terciario);
     border-color: var(--terciario);
+    border-radius: 15px;
     box-shadow: 0px 3px 1px #d8d5d5;
     font-weight: bold;
+    width: 200px;
+    height: 60px;
+    text-align: center;
 }
 #study_1 {
     width: 1000px;
@@ -116,6 +188,36 @@ h1{
 }
 /*  ABOUT US */
 
+#boton-reg {
+    background-color: var(--secundario);
+    border-radius: 15px;
+    border-color: var(--secundario);
+    box-shadow: 0px 3px 1px #d8d5d5;
+    font-weight: bold;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: normal;
+    padding: 3px;
+}
+
+/* cursos */
+
+#prev-1 {
+    background-color: var(--terciario);
+    border-radius: 100%;
+    padding: 20px;
+}
+#next-1 {
+    background-color: var(--terciario);
+    border-radius: 100%;
+    padding: 20px;
+}
+.btn-ren {
+    background-color: var(--secundario);
+    color: white;
+}
+
 /* footer*/
 a {
     font-size: 17px;
@@ -129,5 +231,48 @@ a:hover {
 i {
     font-size: 50px;
 }
-
+#logo-renca {
+    width: 200px;
+}
+#bar-1 {
+    background-color: var(--secundario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-2 {
+    background-color: var(--cuaternario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-3 {
+    background-color: var(--primario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-4 {
+    background-color: var(--terciario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-5 {
+    background-color: var(--quinario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#foot-r {
+    text-align: end;
+}
+#foot-cont {
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+.list-inline-item {
+    display: inline-block;
+    vertical-align: middle;
+}
 /*footer*/

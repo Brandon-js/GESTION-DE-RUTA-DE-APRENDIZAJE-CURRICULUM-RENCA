@@ -9,16 +9,17 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
    <link href="style.css" rel="stylesheet">
+   <link href="loginstyle.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="light-mode">
 <!-- NAV BAR -->
-<header class="nav-color">
+<header class="" id="header">
     <nav id="nav-container" class="nav navbar-expand-lg container-fluid p-1">
-            <div class="row w-100">
-                <div class="col-3 text-center">
-                    <img class="" src="./img/logo-renca.png" width="200" height="60">
+            <div class="row w-100" id="log-fat">
+                <div class="col-2">
+                    <img src="./img/logo-renca.png" width="170" height="50">
                 </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -45,10 +46,20 @@
                         </ul>
                 </div>
                 
+                <div class="col-2 container-fluid">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-auto" id="botones">
+                      <button class="active-sun" type="button" onclick="lightMode()">
+                      <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#090e15" d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
+                      <button class="default-moon" type="button" onclick="darkMode()">
+                      <svg width="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg></button>
+                    </div>
+                  </div>
+                </div>
 
-                <div class="col-4 text-end mt-2">
-                    <button type="button" class="btn btn-secondary btn-lg me-3">Iniciar sesión</button>
-                    <button id="reg-btn" type="button" class="btn btn-primary btn-lg" onclick="location.href='registro.html'">Regístrate</button>
+                <div class="col-3">
+                    <button id="log-btn" type="button" class="btn btn-lg me-3">INICIAR SESIÓN</button>
+                    <button id="reg-btn" type="button" class="btn btn-primary btn-lg" onclick="location.href='registro.html'">REGÍSTRATE</button>
                 </div>
             </div>
     </nav>
@@ -57,20 +68,20 @@
 
 <!--INICIO SECCION CARRUSEL-->
     <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col">
+        <div class="row align-items-center">
+            <div class="col-4 ">
                 <div class="col"><br>
                     <!--parrafo de bienvenida-->
-                    <h2>APRENDE CON NOSOTROS</h2>
+                    <h2 id="h2-carrusel">APRENDE CON NOSOTROS</h2>
                     <p id="pCarrusel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur esse illum.
                     </p>
-                    <div class="col">
+                    <div class="col d-flex align-items-center">
                         <button id="botonCarrusel-1" type="button" style="margin: 20px" class="btn btn-primary btn-lg" onclick="location.href='/catalogo-cursos/catalogo.html'">NUESTROS CURSOS</button>
-                        <button id="botonCarrusel-2" type="button" class="btn btn-primary btn-lg">¡ÚNETE!</button>
+                        <button id="botonCarrusel-2" type="button" class="btn btn-primary btn-lg " onclick="location.href='registro.html'">¡ÚNETE!</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-8">
                 <!--carrusel de imagenes-->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -123,8 +134,6 @@
       </div>
 
     </div>
-
-
 <!-- /DATOS -->
 
 
@@ -135,179 +144,507 @@
             <img class="img-fluid" src="/img/portada_main.jpg" class="mb-3" alt="...">
         </div>
         <div class="col-md-6">
-          <div>
+          <div class="mb-5">
             <h1 class="text-center" id="about">¿QUIÉNES SOMOS?</h1>
             <p class="text-center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus inventore possimus sit. Consequatur itaque alias, accusantium sit est ducimus doloremque ullam quos ab recusandae veniam ex facere eaque rem nihil.
             </p>
           </div>
 
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+          <div class="d-flex justify-content-center">
+            <div class="me-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
             </div>
-
+            <div class="me-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+            </div>
         </div>
     </div>
 </div>
+</div>
 <!-- ABOUT US -->
 
-  <!-- F.A.Q -->
+
+    
+    <!-- Carrusel: Cursos populares -->
+
     <div class="container">
-        <div class="container p-3"><h2>Preguntas Frecuentes</h2></div>
-        <div class="accordion" id="accordionExample">
-            <!-- ACORDEON 1-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Lorem Ipsum?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                </div>
-              </div>
-            </div>
-            <!-- ACORDEON 2-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Lorem Ipsum?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                </div>
-              </div>
-            </div>
-            <!-- ACORDEON 3-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Lorem Ipsum?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                </div>
-              </div>
-            </div>
-            <!-- ACORDEON 4-->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Lorem Ipsum
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                  </div>
-                </div>
-              </div>
-              <!-- ACORDEON 5-->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Lorem Ipsum
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                  </div>
-                </div>
-              </div>
-              <!-- ACORDEON 6-->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Lorem Ipsum
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, voluptatem corrupti mollitia possimus commodi vitae temporibus fugiat iste? Tenetur excepturi nesciunt reiciendis error laborum dicta quo obcaecati nisi id cumque.
-                  </div>
-                </div>
-              </div>
-          </div>
+      <h2>Cursos populares</h2>
+      <p>Explora los cursos favoritos de nuestros usuarios.</p>
     </div>
-  <!-- F.A.Q END -->
 
-  <!--footer-->
-  <footer class="bg-light text-dark pt-5 pb-4">
-    <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
+    <div id="carrusel-1" class="carousel slide">
 
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-primary"></h5>
-            <hr class=" mb-4">
-            <ul class="list-unstyled list-inline">
+      <div class="carousel-inner">
 
-              <li class="list-inline-item">
-                 <a href="#" class="text-dark"> <i class="fab fa-facebook"></i></a>
-              </li> 
-              <li class="list-inline-item">
-                 <a href="#" class="text-dark"> <i class="fab fa-twitter"></i></a>
-              </li>  
-              <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class="fab fa-google-plus"></i></a>
-              </li> 
-              
-
-           </ul>
+        <!-- carrusel pt1 -->
+          <div class="carousel-item active">
+            <div>
             
+              <div class="container text-center">
+                <div class="row text-center">
+                    <div class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">Excel desde 0</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-ren">Ver más...</a>
+                        </div>
+                    </div>
+            
+                    <div id="card-2" class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">HTML para principiantes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+            
+                    <div id="card-3" class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">Introduccion a la programación</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+            
+                    <div id="card-4" class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">Redes e Internet</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
           </div>
+        </div>
 
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold">Contactanos</h5>
-              <hr class=" mb-4">
-              <p>
-                <li class="fas fa-home me-3"></li>  Blanco Encalada Nº 1335, Plaza de Renca, Renca.
-              </p>
-              <p>
-                <li class="fas fa-envelope me-3"></li> contacto@renca.cl
-              </p>
-              <p>
-                <li class="fas fa-phone me-3"></li> +56 2 2685 6600
-              </p>
-              <p>
-            
+        <!-- carrusel pt2 -->
+        <div class="carousel-item">
+          <div id="carrusel-part1 d-block">
+
+            <div class="container text-center">
+              <div class="row text-center">
           
+                  <div class="card col-auto m-3" style="width: 18rem;">
+                      <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                      <div class="card-body">
+                      <h5 class="card-title">Excel desde 0</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+          
+                  <div class="card col-auto m-3" style="width: 18rem;">
+                      <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                      <div class="card-body">
+                      <h5 class="card-title">HTML para principiantes</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+          
+                  <div class="card col-auto m-3" style="width: 18rem;">
+                      <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                      <div class="card-body">
+                      <h5 class="card-title">Introduccion a la programación</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+          
+                  <div id="card-4" class="card col-auto m-3" style="width: 18rem;">
+                      <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                      <div class="card-body">
+                      <h5 class="card-title">Redes e Internet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
             </div>
 
-            <hr class="mb-4">
+        </div>
+      </div>
 
-            <div class="text-center mb-2">
-                <p>
-                    Copyright Todos los derechos reservados
-                    <a href="#">
-                        <strong class="text-primary">Test</strong>
-                    </a>
-                </p>
+          <!-- carrusel pt3 -->
+          <div class="carousel-item active">
+            <div id="carrusel-part1 d-block">
 
-            </div>
+              <div class="container text-center">
+                <div class="row text-center">
+                    <div class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">Excel desde 0</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+            
+                    <div class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">HTML para principiantes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+            
+                    <div class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">Introduccion a la programación</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+            
+                    <div class="card col-auto m-3" style="width: 18rem;">
+                        <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                        <div class="card-body">
+                        <h5 class="card-title">Redes e Internet</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
 
+          </div>
+        </div>
 
-        </div>         
+      </div>
 
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-1" data-bs-slide="prev">
+        <span id="prev-1" class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span id="prev-2" class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrusel-1" data-bs-slide="next">
+        <span id="next-1" class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span id="next-2" class="visually-hidden">Next</span>
+      </button>
 
     </div>
 
 
-</footer>
+    <!-- Carrusel: Cursos populares -->
 
 
+    <!-- Carrusel: nuevos cursos -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <div class="container mt-5">
+          <h2>Nuevos cursos</h2>
+          <p>Explora los cursos más recientes.</p>
+        </div>
+        
+        <div id="carrusel-2" class="carousel slide">
+
+          <div class="carousel-inner">
+    
+            <!-- carrusel pt1 -->
+              <div class="carousel-item active">
+                <div id="carrusel-part1 d-block">
+                
+                  <div class="container text-center">
+                    <div class="row text-center">
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">Excel desde 0</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">HTML para principiantes</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">Introduccion a la programación</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">Redes e Internet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+    
+            <!-- carrusel pt2 -->
+            <div class="carousel-item">
+              <div id="carrusel-part1 d-block">
+    
+                <div class="container text-center">
+                  <div class="row text-center">
+              
+                      <div class="card col-auto m-3" style="width: 18rem;">
+                          <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                          <div class="card-body">
+                          <h5 class="card-title">Excel desde 0</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                      </div>
+              
+                      <div class="card col-auto m-3" style="width: 18rem;">
+                          <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                          <div class="card-body">
+                          <h5 class="card-title">HTML para principiantes</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                      </div>
+              
+                      <div class="card col-auto m-3" style="width: 18rem;">
+                          <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                          <div class="card-body">
+                          <h5 class="card-title">Introduccion a la programación</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                      </div>
+              
+                      <div class="card col-auto m-3" style="width: 18rem;">
+                          <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                          <div class="card-body">
+                          <h5 class="card-title">Redes e Internet</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+    
+            </div>
+          </div>
+    
+              <!-- carrusel pt3 -->
+              <div class="carousel-item active">
+                <div id="carrusel-part1 d-block">
+    
+                  <div class="container text-center">
+                    <div class="row text-center">
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">Excel desde 0</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">HTML para principiantes</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">Introduccion a la programación</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                
+                        <div class="card col-auto m-3" style="width: 18rem;">
+                            <img src="/img/informatica_icon.jpg" class="card-img-top" alt="informatica">
+                            <div class="card-body">
+                            <h5 class="card-title">Redes e Internet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius dolore quia doloribus autem fuga suscipit corrupti.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-2" data-bs-slide="prev">
+            <span id="prev-1" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span id="prev-2" class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carrusel-2" data-bs-slide="next">
+            <span id="next-1" class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span id="next-2" class="visually-hidden">Next</span>
+          </button>
+    
+        </div>
+
+    <!-- /Carrusel: nuevos cursos -->
+
+    <!-- Aprende a tu ritmo -->
+    <div class="container">
+      <div class="row contenedor">
+          
+          <div class="col-md-6">
+            <div>
+              <h1 class="text-center" id="about">APRENDE A TU RITMO</h1>
+              <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus inventore possimus sit. Consequatur itaque alias, accusantium sit est ducimus doloremque ullam quos ab recusandae veniam ex facere eaque rem nihil.
+              </p>
+              <div class="text-center">
+              <button id="boton-reg" type="button" style="margin: 20px" class="btn btn-primary btn-lg " onclick="location.href='registro.html'">¡QUIERO REGISTRARME!</button></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/portada_main.jpg" class="mb-3" alt="...">
+        </div>
+      </div>
+  </div>
+
+
+  <!-- footer-->
+
+  <footer>
+    <div class="container-fluid row">
+
+
+    <div class="col-5 row mx-auto justify-content-center align-items-center">
+      <div id="bar-1"></div>
+      <div id="bar-2"></div>
+      <div id="bar-3"></div>
+      <div id="bar-4"></div>
+      <div id="bar-5"></div>
+    </div>
+
+    <div class="container-fluid col-2 text-center">
+      <div class="text-center">
+      <img class="img-fluid mx-auto" id="logo-renca" src="/img/logo-renca.png">
+        </div>
+    </div>
+    <div class="col-5 row mx-auto justify-content-center align-items-center">
+      <div id="bar-5"></div>
+      <div id="bar-4"></div>
+      <div id="bar-3"></div>
+      <div id="bar-2"></div>
+      <div id="bar-1"></div>
+    </div>
+
+
+    </div>
+
+    <div id="foot-cont" class="container-fluid row mt-4">
+
+
+      <div class="col-5 row mx-auto justify-content-center align-items-center">
+        <div class="mx-auto text-center">
+        <p>Blanco Encalada N*1335, Plaza de Renca, Renca.</p>
+        <p>+56 2 2685 6600</p>
+        <p>contacto@renca.cl</p>
+        <p>Lunes a viernes de 08:30 a 14:00 horas<br>15:00 a 17:00 horas.</p>
+        </div>
+      </div>
+  
+      <div class="container-fluid col-2 text-center ">
+        <div class="text-center mx-auto">
+
+          <ul class="list-unstyled list-inline">
+            <br><br>
+            <li class="list-inline-item">
+               <a href="#" class="text-dark"> <i class="fab fa-facebook"></i></a>
+            </li> 
+            <li class="list-inline-item">
+               <a href="#" class="text-dark"> <i class="fab fa-twitter"></i></a>
+            </li>  
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"> <i class="fab fa-google-plus"></i></a>
+            </li> 
+            
+        </ul>
+
+          </div>
+      </div>
+      <div class="col-5 row mx-auto justify-content-center align-items-center">
+        <div id="foot-r" class="mx-auto text-center">
+          <p class="foot-r">Preguntas Frecuentes</p>
+          <p class="foot-r">Explora nuestros cursos</p>
+          <p class="foot-r">Sobre Nosotros</p>
+          <p>Contáctanos</p>
+        </div>
+      </div>
+      </div>
+
+      <div id="foot-cont" class="container text-center mt-5">
+        <p>© 2024 Ilustre Municipalidad de Renca</p>
+      </div>
+  </footer>
+
+
+    <!-- Modal de inicio de sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Ingresa tus datos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulario">
+        </div class="mb-3">
+          <form method="post">
+              <div class="username">
+                  <input type="text" required>
+                  <label for="username">Nombre de usuario</label>
+              </div>
+              <div class="contraseña">
+                  <input type="password" required>
+                  <label for="contraseña">Contraseña</label>
+              </div>
+              <div class="recordar">¿Olvidaste tu contraseña?</div>
+              <input type="submit" value="Iniciar sesión">
+              <div class="registrarse">
+                  <input type="button" value="Crear cuenta">
+              </div>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--FINAL MODAL DE INICIO DE SESION!-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
 
