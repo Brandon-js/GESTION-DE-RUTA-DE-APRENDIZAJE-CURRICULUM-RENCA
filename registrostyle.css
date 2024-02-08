@@ -160,3 +160,12 @@ body {
         min-height: 50vh;
     }
 }
+
+#condiciones{
+    color: blue;
+    cursor: pointer;
+}
+
+#btn-condiciones{
+    background-color: #02edca;
+}
