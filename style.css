@@ -19,7 +19,6 @@
     border-bottom-left-radius: 20px;
     height: 40px;
     width: 60px;
-    background-color: var(--terciario);
 }
 .default-moon {
     border-top-right-radius: 20px;
@@ -29,7 +28,7 @@
     border-left: 1px solid transparent
 }
 .active-moon {
-    background-color: black;
+    background-color: #191919;
     border: 1px solid white;
 }
 
@@ -37,9 +36,24 @@
     background-color: white;
 }
 .dark-mode {
-    background-color: black;
+    background-color:#191919;
     color: white;
 }
+.light-mode-btn {
+    background-color: var(--quinario);
+}
+.dark-mode-btn {
+    background-color: var(--quinario);
+}
+
+
+.light-mode-header {
+    background-color: rgb(238, 236, 236);
+}
+.dark-mode-header {
+    background-color: rgb(97, 97, 97);
+}
+
 /* Dark-mode */
 
 /* NAV Y PORTADA */

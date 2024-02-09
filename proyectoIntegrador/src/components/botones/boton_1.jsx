@@ -1,11 +1,11 @@
 import React from 'react'
 import '../botones/botones.css'
 
-const Boton_1 = (param,link) => {
+const Boton_1 = (props) => {
     return (
         <>
             <button className='btn-primario'>
-                {param.text}
+                {props.text}
             </button>
         </>
     )

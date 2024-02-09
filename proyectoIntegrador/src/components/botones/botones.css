@@ -16,7 +16,7 @@
     font-size: 1.3em;
     font-weight: 700;
     padding: 10px;
-    margin-left: 20px;
+    margin-right: 30px;
     
 }
 .btn-secundario:hover {
@@ -31,5 +31,5 @@
     font-size: 1.3em;
     font-weight: 700;
     padding: 0;
-    margin-right: 20px;
+    margin-right: 30px;
 }

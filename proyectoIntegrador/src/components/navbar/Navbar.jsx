@@ -11,15 +11,15 @@ const Navbar = () => {
     <header className='container-fluid'>
         <nav className='nav-style row'>
                 <div className='col-2'>
-                    <img src={logo} className='img-fluid' alt='logo-renca'/>
+                    <img src={logo} className='img-fluid img-style' alt='logo-renca'/>
                 </div>
                 <div className='col-5'>
                   <Navigation/>
                 </div>
                 <div className='col-1'></div>
-                <div className='col-4 text-center'>
+                <div className='col-4 text-end'>
                   <Boton_special text={'INICIAR SESIÓN'} />
-                  <Boton_2 text={'REGÍSTRATE'}/>
+                  <Boton_2 text='REGÍSTRATE'/>
             </div>
         </nav>
     </header>
