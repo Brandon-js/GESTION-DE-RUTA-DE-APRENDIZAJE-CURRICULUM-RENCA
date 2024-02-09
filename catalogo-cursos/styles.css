@@ -9,41 +9,49 @@
     width: 8rem;
     height: 8rem;
     background-color: #ceff26;
+    cursor: pointer;
 }
 #icon-2:hover {
     width: 8rem;
     height: 8rem;
     background-color: #fd571e;
+    cursor: pointer;
 }
 #icon-3:hover {
     width: 8rem;
     height: 8rem;
     background-color: #02edca;
+    cursor: pointer;
 }
 #icon-4:hover {
     width: 8rem;
     height: 8rem;
     background-color: #fda22d;
+    cursor: pointer;
 }
 #icon-5:hover {
     width: 8rem;
     height: 8rem;
     background-color: #0ab5fd;
+    cursor: pointer;
 }
 #icon-6:hover {
     width: 8rem;
     height: 8rem;
     background-color: #02edca;
+    cursor: pointer;
 }
 #icon-7:hover {
     width: 8rem;
     height: 8rem;
     background-color: #fd571e;
+    cursor: pointer;
 }
 #icon-8:hover {
     width: 8rem;
     height: 8rem;
     background-color: #ceff26;
+    cursor: pointer;
 }
 
 #prueba {
@@ -62,4 +70,8 @@
     position:absolute;
     top: 600px;
     left: 275px
+}
+
+#logo-renca {
+    cursor: pointer;
 }

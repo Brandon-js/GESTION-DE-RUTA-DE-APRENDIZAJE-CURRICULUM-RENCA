@@ -66,12 +66,12 @@
 }
 
 #log-btn {
-    color: var(--secundario);
+    color: var(--quinario);
     font-weight: bold;
 }
 #reg-btn {
-    background-color: var(--cuaternario);
-    border-color: var(--cuaternario);
+    background-color: var(--quinario);
+    border-color: var(--quinario);
     border-radius: 15px;
     box-shadow: 0px 3px 1px #d8d5d5;
     font-weight: bold;
@@ -151,6 +151,8 @@
 }
 .text-data {
     color: white;
+    font-size: 30px;
+    text-align: left;
 
 }
 .father {
@@ -227,9 +229,15 @@ h1{
     border-radius: 100%;
     padding: 20px;
 }
-.btn-ren {
-    background-color: var(--secundario);
+.btn-ins {
+    background-color: var(--cuaternario);
     color: white;
+    font-weight: bold;
+}
+.btn-sm {
+    background-color: var(--quinario);
+    color: white;
+    font-weight: bold;
 }
 
 /* footer*/
