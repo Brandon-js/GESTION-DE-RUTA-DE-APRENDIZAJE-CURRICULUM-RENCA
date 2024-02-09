@@ -21,8 +21,8 @@ function lightMode() {
     bodySelect.classList.remove('dark-mode')
     bodySelect.classList.add('light-mode')
 
-    navSelect.classList.remove('dark-mode')
-    navSelect.classList.add('light-mode')
+    navSelect.classList.remove('dark-mode-header')
+    navSelect.classList.add('light-mode-header')
 
     sunBtn.classList.add('light-mode-btn')
     moonBtn.classList.remove('dark-mode-btn')
@@ -38,8 +38,8 @@ function darkMode() {
     bodySelect.classList.remove('light-mode')
     bodySelect.classList.add('dark-mode')
 
-    navSelect.classList.add('dark-mode')
-    navSelect.classList.remove('light-mode')
+    navSelect.classList.remove('light-mode-header')
+    navSelect.classList.add('dark-mode-header')
 
     moonBtn.classList.add('dark-mode-btn')
     sunBtn.classList.remove('light-mode-btn')
