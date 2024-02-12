@@ -5,6 +5,7 @@ import Boton_1 from '../botones/boton_1'
 import Boton_2 from '../botones/boton_2'
 import Boton_special from '../botones/boton_special'
 import Navigation from './Navigation'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -19,7 +20,9 @@ const Navbar = () => {
                 <div className='col-1'></div>
                 <div className='col-4 text-end'>
                   <Boton_special text={'INICIAR SESIÓN'} />
-                  <Boton_2 text='REGÍSTRATE'/>
+                  <Link to="/registro">
+                  <Boton_2 text='REGISTRARME'/>
+                  </Link>
             </div>
         </nav>
     </header>
