@@ -15,7 +15,7 @@ const Card_1 = (props) => {
             <Link to="/registro" id="btn1">
               <Boton_3 text={'Inscribirme'} />
             </Link>
-            <Link to="/catalogo" id="btn2">
+            <Link to="/cursos" id="btn2">
               <Boton_2 text={'Ver más'}/>
             </Link>
             </div>

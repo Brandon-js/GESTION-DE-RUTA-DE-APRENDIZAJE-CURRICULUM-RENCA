@@ -14,10 +14,10 @@ const Carousel_cards = (props) => {
         <div className="carousel-inner">
 
           <div className="carousel-item active">
-              <div class="container text-center">
-                <div class="row text-center">
+              <div className="container text-center">
+                <div className="row text-center">
                   <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                  <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                  <Card_1 imagen={img_card} alt={'imagen curso'} title={'Curso JavaScript'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
                   <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
               </div>
             </div>
@@ -35,10 +35,10 @@ const Carousel_cards = (props) => {
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div>
-              <div class="container text-center">
-                <div class="row text-center">
+              <div className="container text-center">
+                <div className="row text-center">
                 <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
                 <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
                 <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
