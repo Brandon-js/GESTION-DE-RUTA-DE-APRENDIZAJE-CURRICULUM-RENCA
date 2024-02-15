@@ -16,10 +16,10 @@ const Carousel_portada = () => {
                 <p>Descubre el poder de tu mente y despierta el conocimiento que te transformará. ¡Bienvenido a un viaje donde cada lección es una puerta abierta hacia un futuro lleno de posibilidades! Aprender con nosotros es el primer paso hacia tu grandeza.</p>
                 <div className="col align-items-center">
                     <Link to="/registro">
-                    <Boton_2 text={'Únete ahora'}/>
+                    <Boton_3 text={'Únete ahora'}/>
                     </Link>
                     <Link to="/catalogo">
-                        <Boton_3 text={'Explorar cursos'}/>
+                        <Boton_2 text={'Explorar cursos'}/>
                     </Link>
                 </div>
             </div>

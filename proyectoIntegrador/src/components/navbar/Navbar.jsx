@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo-renca.png'
 import Boton_2 from '../botones/Boton_2'
-import Boton_special from '../botones/boton_special'
+import Empty_button from '../botones/Empty_button'
 import Navigation from './Navigation'
 import { Link } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ const Navbar = () => {
                 </div>
                 <div className='col-1'></div>
                 <div className='col-4 text-end'>
-                  <Boton_special text={'INICIAR SESIÓN'} />
+                  <Empty_button text={'INICIAR SESIÓN'} />
                   <Link to="/registro">
                   <Boton_2 text='REGISTRARME'/>
                   </Link>

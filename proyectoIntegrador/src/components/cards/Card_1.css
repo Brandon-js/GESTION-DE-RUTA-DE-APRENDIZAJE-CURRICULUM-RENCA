@@ -1,0 +1,14 @@
+.card1 {
+    height: 32rem;
+    width: 25rem;
+    border-radius: 25px;
+    border-right: 2px solid rgba(100, 99, 99, 0.233);
+    border-bottom: 5px solid rgba(100, 99, 99, 0.233);
+}
+.card1 img {
+    margin-top: 15px;
+}
+
+#btn1 {
+    margin-right: 2.5em;
+}

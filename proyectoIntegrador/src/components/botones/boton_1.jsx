@@ -1,6 +1,7 @@
 import React from 'react'
 import '../botones/botones.css'
 
+/* Boton Naranja Oscuro */
 const Boton_1 = (props) => {
     return (
         <>
