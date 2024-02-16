@@ -3,12 +3,14 @@ import Home from '../views/Home'
 import Catalogo from '../views/Catalogo';
 import Registro from '../views/Registro.jsx';
 import Cursos from '../views/Cursos.jsx';
+import DashBoard from '../views/DashBoard.jsx'
 
 const router = createBrowserRouter([
     {path:'/', element: <Home />},
     {path:'/registro', element: <Registro />},
     {path:'/catalogo', element: <Catalogo />},
     {path:'/cursos', element: <Cursos />},
+    {path:'/dashboard-user', element: <DashBoard/>}
     
 ]);
 
