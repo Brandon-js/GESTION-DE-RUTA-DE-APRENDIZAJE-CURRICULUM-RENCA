@@ -27,7 +27,7 @@ function Registro() {
                     <div className="form-group d-flex flex-column justify-content-center align-items-center">
                         <button className="btn btn-outline-light btn-google btn-sm btn-block mb-3"><i className="icon ion-logo-google lead align-middle mr-2"></i> Continuar con Google</button>
                         <button className="btn btn-outline-light btn-facebook btn-sm btn-block mb-3"><i className="icon ion-logo-facebook lead align-middle mr-2"></i> Continuar con Facebook</button>
-                        <button className="btn btn-outline-light btn-apple btn-sm btn-block mb-3"><i className="icon ion-logo-apple lead align-middle mr-2"/>Continuar con Apple</button>
+                        <button className="btn btn-outline-light btn-apple btn-sm btn-block mb-3"><i className="icon ion-logo-apple lead align-middle mr-2"></i> Continuar con Apple</button>
                     </div>
                     
                     
