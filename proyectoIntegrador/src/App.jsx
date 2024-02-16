@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import './App.css'
-import Navbar from './components/navbar/Navbar'
+import SideBar from './components/side-bar/SideBar'
+import DashBoard from './views/DashBoard'
 
 const App = () => {
 
   return (
-      <Navbar/>
+    <div>
+      <DashBoard />
+    </div>
   )
 
 }
