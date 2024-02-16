@@ -1,6 +1,6 @@
 import React from 'react'
 import Casilla from '../components/curso-progreso/Casilla'
-
+import SideBar from '../components/side-bar/SideBar'
 function DashMensaje() {
   return (
     <div>
