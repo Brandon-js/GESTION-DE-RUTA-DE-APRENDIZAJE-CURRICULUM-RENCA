@@ -25,14 +25,14 @@ function Registro() {
                     <h1 className="font-weight-bold mb-3 text-center display-5">Crea tu cuenta gratis</h1>
                     <h3 className="font-weight-bold text-center h4">¡Comienza a aprender ya!</h3>
                     <div className="form-group d-flex flex-column justify-content-center align-items-center">
-                        <button className="btn btn-outline-light btn-google btn-sm btn-block mb-2"><i className="icon ion-logo-google lead align-middle mr-2"></i> Continuar con Google</button>
-                        <button className="btn btn-outline-light btn-facebook btn-sm btn-block mb-2"><i className="icon ion-logo-facebook lead align-middle mr-2"></i> Continuar con Facebook</button>
-                        <button className="btn btn-outline-light btn-apple btn-sm btn-block mb-2"><i className="icon ion-logo-apple lead align-middle mr-2"></i> Continuar con Apple</button>
+                        <button className="btn btn-outline-light btn-google btn-sm btn-block mb-3"><i className="icon ion-logo-google lead align-middle mr-2"></i> Continuar con Google</button>
+                        <button className="btn btn-outline-light btn-facebook btn-sm btn-block mb-3"><i className="icon ion-logo-facebook lead align-middle mr-2"></i> Continuar con Facebook</button>
+                        <button className="btn btn-outline-light btn-apple btn-sm btn-block mb-3"><i className="icon ion-logo-apple lead align-middle mr-2"/>Continuar con Apple</button>
                     </div>
                     
                     
                     
-                    <div className="form-group mb-5">
+                    <div className="form-group mb-5 mt-2">
                         <div className="horizontal-line-container">
                             <hr className="separator"/>
                             <div className="circle"></div>
@@ -42,8 +42,8 @@ function Registro() {
                     
 
                     <form>
-                        <div className="form-row mb-2">
-                            <div className="form-group col-md-6" id='nombre'>
+                        <div className="row mb-2">
+                            <div className="form-group col-md-6">
                                 <label className="font-weight-bold">Nombre <span className="text-danger">*</span></label>
                                 <input type="text" className="form-control" placeholder="Tu nombre"/>
                             </div>
