@@ -2,7 +2,7 @@ import React from 'react'
 import './ProgresDash.css'
 function ProgresDash() {
   return (
-    <div className='container' >
+    <div className='container-barra' >
         <div className='row'>
             <div className='col'>
                 <h5>Titulo</h5>
