@@ -8,3 +8,9 @@
 .img-style {
     width: 10em;
 }
+
+#icon {
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+}

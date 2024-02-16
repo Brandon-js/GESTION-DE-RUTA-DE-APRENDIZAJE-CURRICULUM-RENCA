@@ -8,12 +8,13 @@ import Carousel_cards from '../components/carousel/Carousel_cards'
 import { Link } from 'react-router-dom'
 import Boton_2 from '../components/botones/Boton_2'
 import Aprende_ritmo from '../components/sections/Aprende_ritmo'
+import Navbar_login from '../components/navbar/Navbar_login'
 
 
 const Home = () => {
   return (
     <>
-    <Navbar/>
+    <Navbar_login/>
     <Carousel_portada />
     <Data_home />
     <Quienes_somos />
