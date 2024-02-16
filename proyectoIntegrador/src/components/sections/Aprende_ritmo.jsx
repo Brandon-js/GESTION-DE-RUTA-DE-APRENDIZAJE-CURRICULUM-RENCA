@@ -5,7 +5,7 @@ import Boton_2 from '../botones/Boton_2'
 
 const Aprende_ritmo = () => {
   return (
-    <div className="container">
+    <div className="container mt-5">
         <div className="row contenedor">
             
             <div className="col-md-6 d-flex align-self-center">

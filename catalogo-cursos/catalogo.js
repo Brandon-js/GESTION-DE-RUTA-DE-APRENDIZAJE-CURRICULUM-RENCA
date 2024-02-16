@@ -44,3 +44,7 @@ const desarrolloPersonalCurso = function() {
     card5.childNodes[1].childNodes[1].childNodes[1].src = "https://img.freepik.com/premium-vector/self-development-concept-idea-personal-growth_277904-3837.jpg"
     card5.childNodes[1].childNodes[3].childNodes[1].childNodes[1].textContent = "Curso de crecimiento personal definitivo"
 }
+
+const test = () => {console.log('Hello World !');}
+
+test()

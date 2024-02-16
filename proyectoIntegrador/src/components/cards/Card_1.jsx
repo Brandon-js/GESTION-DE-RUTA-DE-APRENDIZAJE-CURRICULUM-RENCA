@@ -19,7 +19,8 @@ const Card_1 = (props) => {
               <Boton_2 text={'Ver más'}/>
             </Link>
             </div>
-        </div>
+        </div> 
+        
   )
 }
 

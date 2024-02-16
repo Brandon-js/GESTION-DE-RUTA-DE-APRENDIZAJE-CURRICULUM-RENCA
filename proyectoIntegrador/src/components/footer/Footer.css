@@ -1,0 +1,30 @@
+#bar-1 {
+    background-color: var(--secundario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-2 {
+    background-color: var(--cuaternario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-3 {
+    background-color: var(--primario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-4 {
+    background-color: var(--terciario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
+#bar-5 {
+    background-color: var(--quinario);
+    width: 100px;
+    height: 10px;
+    margin-right: 20px;
+}
