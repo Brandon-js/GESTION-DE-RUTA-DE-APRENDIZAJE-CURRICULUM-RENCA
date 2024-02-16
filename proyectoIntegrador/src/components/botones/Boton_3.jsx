@@ -1,15 +1,15 @@
 import React from 'react'
 import '../botones/botones.css'
 
-/* Boton Naranja Oscuro */
-const Boton_1 = (props) => {
+/* Boton Naranjo Claro Renca */
+const Boton_3 = (props) => {
     return (
         <>
-            <button className='btn-primario'>
+            <button className='btn-cuaternario'>
                 {props.text}
             </button>
         </>
     )
 }
 
-export default Boton_1
+export default Boton_3

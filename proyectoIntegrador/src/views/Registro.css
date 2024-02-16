@@ -7,14 +7,7 @@
     --color-green:#CEFF24;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-    letter-spacing: .05rem;
-}
+
 
 .extra-large-screen-top-stripe {
     position: relative;
