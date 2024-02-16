@@ -43,11 +43,11 @@ function Registro() {
 
                     <form>
                         <div className="form-row mb-2">
-                            <div className="form-group col-md-6">
+                            <div className="form-group col-md-6" id='nombre'>
                                 <label className="font-weight-bold">Nombre <span className="text-danger">*</span></label>
                                 <input type="text" className="form-control" placeholder="Tu nombre"/>
                             </div>
-                            <div className="form-group col-md-6">
+                            <div className="form-group col-md-6" id='apellido'>
                                 <label className="font-weight-bold">Apellido <span className="text-danger">*</span></label>
                                 <input type="text" className="form-control" placeholder="Tu apellido"/>
                             </div>
