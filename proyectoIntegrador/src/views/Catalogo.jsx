@@ -1,8 +1,15 @@
 import React from 'react'
+import Navbar from '../components/navbar/Navbar'
+import Footer from '../components/footer/Footer'
+import Catalogo_portada from '../components/sections/Catalogo_portada'
 
 const Catalogo = () => {
   return (
-    <h1>Catalogo</h1>
+    <>
+    <Navbar/>
+    <Catalogo_portada/>
+    
+    </>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cursos_portada = () => {
   return (
-    <h1>cacacaca</h1>
+    <h1>Curso de Excel</h1>
   )
 }
 

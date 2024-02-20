@@ -17,7 +17,7 @@ function ProgresDash() {
                     </div>
                 </div>
             <div className='col'>
-                <button className='boton-curso' >Continuar Curso</button>
+                <button className='boton-curso'>Continuar Curso</button>
             </div>
         </div>
     </div>

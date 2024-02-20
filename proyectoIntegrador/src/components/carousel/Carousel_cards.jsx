@@ -18,7 +18,7 @@ const Carousel_cards = (props) => {
                 <div className="row text-center">
                   <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
                   <Card_1 imagen={img_card} alt={'imagen curso'} title={'Curso JavaScript'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                  <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                  <Card_1 imagen={img_card} alt={'imagen curso'} title={'Clase de Sumba'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
               </div>
             </div>
           </div>

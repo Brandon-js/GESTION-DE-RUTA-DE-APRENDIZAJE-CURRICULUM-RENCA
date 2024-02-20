@@ -1,0 +1,53 @@
+#dark-mode {
+    background-color: #02edca;
+    border-radius: 0%;
+}
+#botones {
+    font-size: 0;
+
+}
+#sun-btn {
+    margin-left: 110px;
+}
+
+
+.active-sun {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    width: 60px;
+    margin-left: 50px;
+}
+.default-moon {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    width: 60px;
+    border-left: 1px solid transparent
+}
+.active-moon {
+    background-color: #191919;
+    border: 1px solid white;
+}
+
+.light-mode {
+    background-color: white;
+}
+.dark-mode {
+    background-color:#191919;
+    color: white;
+}
+.light-mode-btn {
+    background-color: var(--quinario);
+}
+.dark-mode-btn {
+    background-color: var(--quinario);
+}
+
+
+.light-mode-header {
+    background-color: rgb(238, 236, 236);
+}
+.dark-mode-header {
+    background-color: rgb(51, 51, 51);
+}

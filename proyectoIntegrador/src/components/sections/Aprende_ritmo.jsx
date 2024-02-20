@@ -1,6 +1,7 @@
 import React from 'react'
 import img_aprende from '../../assets/aprende_ritmo.png'
 import Boton_2 from '../botones/Boton_2'
+import { Link } from 'react-router-dom'
 
 
 const Aprende_ritmo = () => {
@@ -15,7 +16,9 @@ const Aprende_ritmo = () => {
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus inventore possimus sit. Consequatur itaque alias, accusantium sit est ducimus doloremque ullam quos ab recusandae veniam ex facere eaque rem nihil.
                         </p>
                     <div className="text-center">
-                    <Boton_2 text='REGISTRARME' />
+                        <Link to='/registro'>
+                            <Boton_2 text='REGISTRARME' />
+                        </Link>
                     </div>
                 </div>
             </div>

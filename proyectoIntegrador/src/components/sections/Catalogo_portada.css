@@ -1,0 +1,25 @@
+#img-portada {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+#cont-portada {
+    background-color: #ffffffd3;
+    border-radius: 10px;
+    position:fixed;
+    line-height: normal;
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.searchbar {
+    width: 100%;
+    background-color: var(--quinario);
+    border-radius: 25px;
+    padding: 7px 15px 7px 7px;
+}
+#form-catalogo {
+    border-radius: 20px;
+}
