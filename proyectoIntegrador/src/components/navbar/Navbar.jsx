@@ -18,7 +18,9 @@ const Navbar = () => {
                 </div>
                 <div className='col-1'></div>
                 <div className='col-4 text-end'>
-                  <Empty_button text={'INICIAR SESIÓN'} />
+                <Link to="/login">
+                    <Empty_button text={'INICIAR SESIÓN'} />
+                  </Link>
                   <Link to="/registro">
                   <Boton_2 text='REGISTRARME'/>
                   </Link>

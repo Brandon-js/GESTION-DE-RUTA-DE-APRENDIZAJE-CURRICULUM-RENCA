@@ -1,309 +1,173 @@
+.root {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  .content_box2 {
-    display: flex;
-    flex-direction: column;
-    margin: 13px auto 50px;
-    min-height: 625px;
-    position: relative;
-    width: 81.71%;
+.p-5{
+    border: 2px solid #000; /* Borde negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
   }
-  .highlight1 {
-    align-items: center;
-    bottom: 85px;
-    color: rgb(4, 146, 208);
-    display: flex;
-    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    justify-content: center;
-    left: -0.5px;
-    position: absolute;
-    text-align: center;
-    text-decoration: underline;
-    width: 209px;
-  }
-  .medium_title {
-    align-items: center;
-    bottom: 553px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 400 24px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 36px;
-    justify-content: center;
-    left: 64.5px;
-    position: absolute;
-    right: 86.5px;
-    text-align: center;
-    top: 36px;
-    width: 251px;
-  }
-  .medium_title1 {
-    align-items: center;
-    bottom: 589px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 400 24px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 36px;
-    justify-content: center;
-    left: 390px;
-    position: absolute;
-    right: 0px;
-    text-align: center;
-    top: 0px;
-    width: 12px;
-  }
-  .line {
-    background-color: rgb(0, 0, 0);
-    bottom: 305px;
-    height: 1px;
-    left: 0px;
-    position: absolute;
-    right: 230px;
-    top: 319px;
-    width: auto;
-  }
-  .highlight {
-    align-items: center;
-    bottom: 294px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 700 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    left: 185px;
-    position: absolute;
-    right: 206px;
-    top: 307px;
-    width: 11px;
-  }
-  .line1 {
-    background-color: rgb(0, 0, 0);
-    bottom: 305px;
-    height: 1px;
-    left: 209px;
-    position: absolute;
-    right: 21px;
-    top: 319px;
-    width: auto;
-  }
-  .content_box {
-    bottom: 340px;
-    display: flex;
-    flex-direction: column;
-    height: 184px;
-    left: 0px;
-    position: absolute;
-    right: 22px;
-    top: 101px;
-    width: 380px;
-  }
-  .rect {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
-    bottom: 138px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
-    height: 46px;
-    left: 0px;
-    outline: 1px solid rgb(222, 222, 222);
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 380px;
-  }
-  .rect1 {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
-    bottom: 69px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
-    height: 46px;
-    left: 0px;
-    outline: 1px solid rgb(222, 222, 222);
-    position: absolute;
-    right: 0px;
-    top: 69px;
-    width: 380px;
-  }
-  .rect2 {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
-    bottom: 0px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
-    height: 46px;
-    left: 0px;
-    outline: 1px solid rgb(222, 222, 222);
-    position: absolute;
-    right: 0px;
-    top: 138px;
-    width: 380px;
-  }
-  .image {
-    bottom: 146px;
-    height: 30px;
-    left: 10px;
-    position: absolute;
-    right: 340px;
-    top: 8px;
-    width: 30px;
-  }
-  .highlight2 {
-    align-items: center;
-    bottom: 149px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 700 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    left: 87px;
-    position: absolute;
-    right: 113px;
-    top: 11px;
-    width: 180px;
-  }
-  .image1 {
-    bottom: 82px;
-    height: 30px;
-    left: 10px;
-    position: absolute;
-    right: 340px;
-    top: 72px;
-    width: 30px;
-  }
-  .highlight3 {
-    align-items: center;
-    bottom: 84px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 700 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    left: 87px;
-    position: absolute;
-    right: 91px;
-    top: 76px;
-    width: 202px;
-  }
-  .image11 {
-    bottom: 10px;
-    height: 34px;
-    left: 7px;
-    position: absolute;
-    width: 34px;
-  }
-  .highlight4 {
-    align-items: center;
-    bottom: 11px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 700 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    left: 87px;
-    position: absolute;
-    width: 170px;
-  }
-  .rect11 {
-    background-color: rgb(4, 146, 208);
-    border-radius: 15px 15px 15px 15px;
-    bottom: 0px;
-    height: 54px;
-    left: 73px;
-    position: absolute;
-    right: 95px;
-    top: 571px;
-    width: 234px;
-  }
-  .medium_title11 {
-    align-items: center;
-    bottom: 12.5px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    font: 300 24px/1.2 "Poppins", Helvetica, Arial, serif;
-    height: 29px;
-    justify-content: center;
-    left: 113px;
-    position: absolute;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24705882352941178);
-    width: 154px;
-  }
-  .content_box1 {
-    display: flex;
-    flex-direction: column;
-    height: 161px;
-    left: 0px;
-    position: absolute;
-    top: 349px;
-    width: 380px;
-  }
-  .highlight5 {
-    align-items: center;
-    bottom: 137px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 700 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    justify-content: center;
-    left: 0px;
-    position: absolute;
-    right: 198px;
-    text-align: center;
-    top: 0px;
-    width: 182px;
-  }
-  .rect3 {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
-    bottom: 86px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
-    height: 46px;
-    left: 0px;
-    outline: 1px solid rgb(222, 222, 222);
-    position: absolute;
-    right: 0px;
-    top: 29px;
-    width: 380px;
-  }
-  .highlight6 {
-    align-items: center;
-    bottom: 51px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    font: 700 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    left: 0px;
-    position: absolute;
-    right: 269px;
-    top: 86px;
-    width: 111px;
-  }
-  .rect4 {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
-    bottom: 0px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
-    height: 46px;
-    left: 0px;
-    outline: 1px solid rgb(222, 222, 222);
-    position: absolute;
-    right: 0px;
-    top: 115px;
-    width: 380px;
-  }
-  .highlight21 {
-    align-items: center;
-    color: rgb(126, 126, 126);
-    display: flex;
-    font: italic 500 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    left: 18px;
-    position: absolute;
-    text-decoration: underline;
-    top: 39px;
-    width: 182px;
-  }
-  .highlight22 {
-    align-items: center;
-    bottom: 10px;
-    color: rgb(126, 126, 126);
-    display: flex;
-    font: italic 500 16px/1.5 "Poppins", Helvetica, Arial, serif;
-    height: 24px;
-    left: 18px;
-    position: absolute;
-    width: 65px;
-  }
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.google-login, .apple-login, .facebook-login {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-login:hover, .apple-login:hover, .facebook-login:hover {
+  background-color: #f0f0f0;
+}
+
+.content_box2 {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.login-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"].email-login {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"].email-login:hover {
+  background-color: #0056b3;
+}
+
+.horizontal-line-container {
+  display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  justify-content: space-between; /* Espacia los elementos uniformemente */
+  width: 100%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.separator {
+  flex-grow: 1; /* Permite que las líneas crezcan para ocupar todo el espacio disponible */
+  border: none; /* Elimina el borde predeterminado */
+  border-top: 2px solid black; /* Estilo de la línea */
+  height: 2px; /* Grosor de la línea */
+  margin: 0 20px;; /* Agrega espacio a la izquierda y derecha de las líneas */
+}
+
+.circle {
+  width: 10px; /* Diámetro del círculo */
+  height: 10px;
+  border: 2px solid black; /* Borde del círculo */
+  border-radius: 50%; /* Hace que el div sea un círculo */
+}
+
+.form-control2 {
+  background-color: #fff; /* Color de fondo */
+  border: 1px solid #ced4da; /* Borde */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 0.75rem 1rem; /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+  transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
+  width: 40px; /* Toma el 100% del ancho y resta 40px para el espacio de los botones */
+}
+
+/* Estilos para cuando se enfoca la caja */
+.form-control:focus {
+  border-color: #80bdff; /* Color del borde al enfocar */
+  outline: 0; /* Quita el contorno alrededor del borde al enfocar */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+}
+
+/* Agrega estos estilos al final de tu archivo Login.css */
+
+/* Aplica estilos para alinear el texto dentro de los botones de inicio de sesión al centro */
+.btn-login {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px; /* Alinea los botones correctamente */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* Utiliza flexbox para alinear el contenido verticalmente */
+  justify-content:flex-start; /* Alinea el contenido horizontalmente */
+  align-items: center; /* Alinea el contenido verticalmente */
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-login:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.google-login {
+  background-image: url('./google-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 0%; /* Ajusta el espacio a la izquierda del botón para el icono */
+}
+
+.facebook-login {
+  background-image: url('./facebook-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 0%; /* Ajusta el espacio a la izquierda del botón para el icono */
+}
+
+.apple-login {
+  background-image: url('./apple-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 0%; /* Ajusta el espacio a la izquierda del botón para el icono */
+}
+
+.logo {
+  border: none;/* Oculta el elemento img para que solo se muestre el icono de fondo */
+}

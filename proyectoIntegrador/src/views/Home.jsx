@@ -14,7 +14,7 @@ import Navbar_login from '../components/navbar/Navbar_login'
 const Home = () => {
   return (
     <>
-    <Navbar_login/>
+    <Navbar/>
     <Carousel_portada />
     <Data_home />
     <Quienes_somos />
