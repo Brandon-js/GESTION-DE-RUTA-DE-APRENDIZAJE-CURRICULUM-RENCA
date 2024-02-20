@@ -8,6 +8,6 @@ Grupo 5 'Go' | Integrantes:
 
 - Bryan Poblete
 - Javiera Muñoz
-- Brandon Gonzalez
+- Brandon González
 - Carolina Torres
 - Luciano Zapata
