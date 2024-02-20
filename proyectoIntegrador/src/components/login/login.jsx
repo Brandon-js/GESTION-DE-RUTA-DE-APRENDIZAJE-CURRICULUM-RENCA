@@ -1,40 +1,37 @@
 import React from 'react';
-import './Login.css'
+import './Login.css';
 
 function Login(props) {
   return (
-    <div className={`root ${props.className} untitled-page`}>
-      <div className="content_box2">
-        <h5 className="highlight1">¿Olvidaste tu contraseña?</h5>
-        <h2 className="medium_title">Bienvenido de nuevo</h2>
-        <h2 className="medium_title1">x</h2>
-        <hr className="line" size={1} />
-        <h5 className="highlight">o</h5>
-        <hr className="line1" size={1} />
+    <div className="container d-flex align-items-center justify-content-center">
+      <div className="p-5">
+        <h1 className="font-weight-bold mb-3 text-center display-5">¡Bienvenido de nuevo!</h1>
+        <div className="form-group d-flex flex-column align-items-center">
+  <button className="btn btn-login btn-sm btn-block mb-3"><i className="icon ion-logo-google lead align-middle mr-2 google-login logo"></i> Continuar con Google</button>
+  <button className="btn btn-login btn-sm btn-block mb-3"><i className="icon ion-logo-facebook lead align-middle mr-2 facebook-login logo"></i> Continuar con Facebook</button>
+  <button className="btn btn-login btn-sm btn-block mb-3"><i className="icon ion-logo-apple lead align-middle mr-2 apple-login logo"></i> Continuar con Apple</button>
+</div>
 
-        <div className="content_box">
-          <div className="rect" />
-          <div className="rect1" />
-          <div className="rect2" />
-          <img className="image" src={'/assets/multicolored_google_logo.png'} alt="alt text" />
-          <h5 className="highlight2">Continuar con Google</h5>
-          <img className="image1" src={'/assets/blue_twitter_bird_logo.png'} alt="alt text" />
-          <h5 className="highlight3">Continuar con Facebook</h5>
-          <img className="image11" src={'/assets/black_square_placeholder.png'} alt="alt text" />
-          <h5 className="highlight4">Continuar con Apple</h5>
+
+        <div className="form-group mb-5 mt-2">
+          <div className="horizontal-line-container">
+            <hr className="separator"/>
+            <div className="circle"></div>
+            <hr className="separator"/>
+          </div>
         </div>
 
-        <div className="rect11" />
-        <h2 className="medium_title11">iniciar sesión</h2>
-
-        <div className="content_box1">
-          <h5 className="highlight5">CORREO ELECTRÓNICO</h5>
-          <div className="rect3" />
-          <h5 className="highlight6">CONTRASEÑA</h5>
-          <div className="rect4" />
-          <h5 className="highlight21">micorreo@correo.com</h5>
-          <h5 className="highlight22">********</h5>
-        </div>
+        <form className="login-form">
+          <div className="form-group mb-3">
+            <label htmlFor="email" className="font-weight-bold">Correo electrónico <span className="text-danger">*</span></label>
+            <input id="email" type="email" className="form-control2" placeholder="Ingresa tu correo electrónico"/>
+          </div>
+          <div className="form-group mb-3">
+            <label htmlFor="password" className="font-weight-bold">Contraseña <span className="text-danger">*</span></label>
+            <input id="password" type="password" className="form-control2" placeholder="Ingresa una contraseña"/>
+          </div>
+          <button type="submit" className="btn btn-primary btn-block">Iniciar Sesión</button>
+        </form>
       </div>
     </div>
   );
