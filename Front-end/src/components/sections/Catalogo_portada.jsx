@@ -2,6 +2,7 @@ import React from 'react'
 import imgPortada from '../../assets/portada_catalogo.jpg'
 import './Catalogo_portada.css'
 
+
 const Catalogo_portada = () => {
     return (
     <>

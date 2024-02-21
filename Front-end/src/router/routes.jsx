@@ -5,7 +5,6 @@ import Registro from '../views/Registro.jsx';
 import Cursos from '../views/Cursos.jsx';
 import DashBoard from '../views/DashBoard.jsx'
 import DashMensaje from '../views/DashMensaje.jsx';
-import Login from '../components/login/Login.jsx'
 import Navbar from '../components/navbar/Navbar.jsx';
 
 const router = createBrowserRouter([
@@ -14,7 +13,6 @@ const router = createBrowserRouter([
     {path:'/catalogo', element: <Catalogo />},
     {path:'/cursos', element: <Cursos />},
     {path:'/dashboard-user', element: <DashBoard/>},
-    {path:'/login', element: <Login/>},
     {path:'/navdefault', element: <Navbar/>},
 ]);
 
