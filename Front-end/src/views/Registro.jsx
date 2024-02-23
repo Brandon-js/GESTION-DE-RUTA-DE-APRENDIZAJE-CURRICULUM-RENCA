@@ -18,7 +18,9 @@ function Registro() {
       <Modal isOpen={modalOpen} onClose={handleCloseModal}>
         <div className="modal-content">
           <h2>Términos y Condiciones</h2>
-          <p>Teni que ser de renca compi uwu</p>
+          <p>Esta plataforma cuenta con cursos exclusivos para residentes de la comuna de Renca, al registrarte confirmas que resides en Renca.
+
+Adicionalmente deberás subir tu registro social de hogares (RSH) para comprobar que cumplas con los requisitos de la página.</p>
         </div>
       </Modal>
 
