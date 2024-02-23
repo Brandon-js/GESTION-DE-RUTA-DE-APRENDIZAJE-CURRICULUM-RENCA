@@ -22,7 +22,7 @@ function DashBoard() {
         </div>
         <div className='row'>
             <div id='verde' className='col'>
-            <BotonCursos />
+            <BotonCursos cantidad="N" estadoCurso="Curso" />
             </div>
             <div id='naranja' className='col'>
             <BotonCursos />
@@ -32,10 +32,10 @@ function DashBoard() {
             </div>
         </div>
         <div>
-            <ProgresDash />
-            <ProgresDash />
-            <ProgresDash />
-            <ProgresDash />
+            <ProgresDash tituloCurso ="Crea tu propio CV" />
+            <ProgresDash tituloCurso ="Exccel"/>
+            <ProgresDash tituloCurso ="Titulo Curso"/>
+            <ProgresDash tituloCurso ="Titulo Curso"/>
         </div>
     </div>
         

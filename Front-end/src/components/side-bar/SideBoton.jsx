@@ -1,9 +1,9 @@
 import React from 'react'
 import './SideBoton.css'
-function SideBoton() {
+function SideBoton(props) {
   return (
     <>
-        <button className='SideBoton'>Lorem</button>
+        <button className='SideBoton'>{props.seccion}</button>
     </>
   )
 }

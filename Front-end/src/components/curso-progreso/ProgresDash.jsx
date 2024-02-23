@@ -1,11 +1,11 @@
 import React from 'react'
 import './ProgresDash.css'
-function ProgresDash() {
+function ProgresDash(props) {
   return (
     <div className='container-barra' >
         <div className='row'>
             <div className='col'>
-                <h5>Titulo</h5>
+                <h5>{props.tituloCurso}</h5>
             </div>
             <div className='col'>
                 <div class="progress-bar-horizontal">

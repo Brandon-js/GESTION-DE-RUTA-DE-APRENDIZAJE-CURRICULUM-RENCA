@@ -7,10 +7,11 @@
 	height: 100%;
 	background: white;
 	border-radius: 7px;
-	margin: 30px 15px 30px 15px;
+	margin: 15px 15px 15px 15px;
   }
 
   .boton-curso{
+    float: right;
     height: 30px;
     width: 200px;
     margin: 12px;
