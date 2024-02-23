@@ -1,15 +1,14 @@
 import React from 'react'
 import './Casilla.css'
 
-function Casilla() {
+function Casilla(props) {
   return (
     <div className='container-casilla' >
         <div className='row'>
             <div className='col'>
-                <h5>Lorem</h5>
+                <h5>{props.textoMensaje}</h5>
             </div>
-            
-            <div className='col'>
+            <div className='col' style={{float: "right"}}>
                 <button className='boton-curso' >Ver mensaje completo</button>
             </div>
         </div>
