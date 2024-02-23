@@ -6,6 +6,8 @@ import Cursos from '../views/Cursos.jsx';
 import DashBoard from '../views/DashBoard.jsx'
 import DashMensaje from '../views/DashMensaje.jsx';
 import Navbar from '../components/navbar/Navbar.jsx';
+import DashPerfil from '../views/DashPerfil.jsx';
+import MisCursos from '../views/MisCursos.jsx';
 
 const router = createBrowserRouter([
     {path:'/', element: <Home />},
@@ -14,6 +16,9 @@ const router = createBrowserRouter([
     {path:'/cursos', element: <Cursos />},
     {path:'/dashboard-user', element: <DashBoard/>},
     {path:'/navdefault', element: <Navbar/>},
+    {path:'/dashMensaje', element: <DashMensaje />},
+    {path:'/dashboard-mensaje', element: <DashPerfil />},
+    {path:'/dash-mis-cursos',element: <MisCursos/> }
 ]);
 
 export default router
