@@ -1,6 +1,5 @@
 import React from 'react'
 import SideBar from '../components/side-bar/SideBar'
-import '../components/curso-progreso/MisCursos.css'
 import ProgresDash from '../components/curso-progreso/ProgresDash'
 import '../components/curso-progreso/ProgresDash.css'
 
