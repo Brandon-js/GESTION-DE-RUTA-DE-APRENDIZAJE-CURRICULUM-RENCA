@@ -11,6 +11,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primario: #ceff26;
+  --secundario: #fd571e;
+  --terciario: #02edca;
+  --cuaternario:#fda22d;
+  --quinario: #0ab5fd;
+
+  --titulos: 'Heavitas', sans-serif;
+  --secundarios: 'Poppins-MediumItalic', sans-serif;
 }
 
 a {
@@ -38,11 +47,6 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-
-:root{
-    --titulos: 'Heavitas', sans-serif;
-    --secundarios: 'Poppins-MediumItalic', sans-serif;
 }
 
 button:focus,

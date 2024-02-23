@@ -4,21 +4,80 @@
     align-items: center;
     border-bottom: 3px solid #ddd;
 }
+#nav-collapse {
+    margin-bottom: 10px;
+}
 
 .img-style {
     width: 10em;
 }
 
-.icon-cont img {
-    width: 50px;
+
+/* Dark Mode */ 
+#dark-mode {
+    background-color: #02edca;
+    border-radius: 0%;
+}
+#botones {
+    font-size: 0;
 }
 
-#icon {
-    border-radius: 100%;
-    background-color: rgb(255, 255, 255);
-    border-color: black;
+.active-sun {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 30px;
+    width: 40px;
+    margin: 10px 0px;
+}
+.default-moon {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 30px;
+    width: 40px;
+    border-left: 1px solid transparent
+}
+.active-moon {
+    background-color: #191919;
+    border: 1px solid white;
 }
 
-#dash-icon {
-    margin-right: 40px;
+.light-mode {
+    background-color: white;
 }
+.dark-mode {
+    background-color:#191919;
+    color: white;
+}
+.light-mode-btn {
+    background-color: var(--quinario);
+}
+.dark-mode-btn {
+    background-color: var(--quinario);
+}
+
+.log-reg {
+    padding: 0px 3px 10px 3px;
+    
+}
+
+.light-mode-header {
+    background-color: rgb(238, 236, 236);
+}
+.dark-mode-header {
+    background-color: rgb(51, 51, 51);
+}
+
+.nav-btn {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .nav-btn {
+        margin-bottom: 0px;
+        margin-top: 5px;
+    };
+    #btn-special {
+        margin-right: 10px;
+    }
+}
+
