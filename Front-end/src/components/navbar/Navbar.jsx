@@ -15,24 +15,25 @@ const Navbar = () => {
 
 
   return (
-    <header className="container-fluid">
+    <header className="container-fluid sticky-top">
       <nav className="nav-style row ">
-        <Col xs={5} md={2} className="text-start">
+        <Col xs={5} md={4} lg={2} className="text-start">
           <Link to="/">
             <img src={logo} className="img-fluid img-style" alt="logo-renca" />
           </Link>
         </Col>
-        <Col md={5} className=" text center d-none d-md-block">
+        <Col lg={5} className=" text center d-none d-lg-block">
         <Navigation />
         </Col>
 
-        <Col xs={5} md={2} className="text-center" id="botones">
+        {/* Modo oscuro */}
+        <Col xs={5} md={4} lg={1} className="text-center" id="botones">
                   <button
                     id="sun-btn"
                     className="active-sun light-mode-btn"
                     type="button"
                   >
-                    <svg
+                    <svg className="sun-icon"
                       width="25"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
@@ -44,7 +45,7 @@ const Navbar = () => {
                     </svg>
                   </button>
                   <button id="moon-btn" className="default-moon" type="button">
-                    <svg
+                    <svg className="moon-icon"
                       width="20"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 384 512"
@@ -53,9 +54,10 @@ const Navbar = () => {
                     </svg>
                   </button>
         </Col>
+        {/* Modo oscuro */}
 
         {/* Colapsador Responsive */}
-        <div className="col-2 text-center d-md-none">
+        <div className="col-2 col-md-4 text-end d-lg-none">
           <a
             data-bs-toggle="collapse"
             href="#navCollapse"
@@ -63,39 +65,40 @@ const Navbar = () => {
             aria-expanded="false"
             aria-controls="navCollapse"
           >
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width={'30px'}><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width={'30px'}><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
           </a>
         </div>
           {/*Contenido colapsed*/}
-          <div className="collapse d-md-none" id="navCollapse">
+          <div className="collapse d-lg-none" id="navCollapse">
             <div className="card card-body">
               <Navigation />
 
               <Row className="text-center justify-content-center log-reg">
                 {/* Modifica este enlace para abrir el modal en lugar de navegar */}
-                <Col xs={12} md={4}>
+                <Col xs={12} sm={5}>
                 <button
                   onClick={toggleModal}
-                  className="your-button-class nav-btn"
+                  className="your-button-class nav-coll-btn1"
                 >
                   INICIAR SESIÓN
                 </button>
                 </Col>
-                <Col xs={12} md={3}>
+                <Col xs={12} sm={6}>
                 <Link to="/registro">
-                  <Boton_2 text="REGISTRARME" className="nav-btn" />
+                  <Boton_2 text="REGISTRARME" className="nav-coll-btn2" />
                 </Link>
                 </Col>
               </Row>
             </div>
           </div>
+          {/*Contenido colapsed*/}
 
-          <Col md={3} className="d-none d-md-block">
-            <button id="btn-special" onClick={toggleModal} className="your-button-class nav-btn">
+          <Col lg={4} className="d-none d-lg-block text-end">
+            <button id="btn-special" onClick={toggleModal} className="your-button-class nav-btn1">
                     INICIAR SESIÓN
             </button>
-            <Link to="/registro">
-              <Boton_2 text="REGISTRARME" className="nav-btn" />
+            <Link to="/registro" id="btn-test">
+              <Boton_2 id="btn-register" text="REGISTRARME" class='nav-btn2'/>
             </Link>
           </Col>
       </nav>

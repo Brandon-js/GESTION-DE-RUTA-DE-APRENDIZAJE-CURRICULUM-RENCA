@@ -6,9 +6,12 @@ import {Link} from 'react-router-dom'
 
 // Esta card recibe parametros mediante props, es importante agregarlos si se va a reutilizar !
 const Card_1 = (props) => {
+
+  const className = `card1 card col-auto m-3 ${props.aditionalClassName}`
+
   return (
-        <div className="card1 card col-auto m-3">
-            <img src={props.imagen} className="img-fluid card-img-top" alt={props.alt}/>
+        <div className={className}>
+            <img src={props.imagen} className='img-fluid card-img-top' alt={props.alt}/>
             <div class="card-body">
             <h5 class="card-title">{props.title}</h5>
             <p class="card-text">{props.description}</p>

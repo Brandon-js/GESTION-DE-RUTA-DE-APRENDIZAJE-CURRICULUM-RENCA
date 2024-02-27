@@ -2,6 +2,7 @@ import React from 'react'
 import Card_1 from '../cards/Card_1'
 import img_card from '../../assets/card.png'
 import './Carousel_portada.css'
+import './Carousel_cards.css'
 
 const Carousel_cards = (props) => {
   
@@ -16,9 +17,9 @@ const Carousel_cards = (props) => {
           <div className="carousel-item active">
               <div className="container text-center">
                 <div className="row text-center">
-                  <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                  <Card_1 imagen={img_card} alt={'imagen curso'} title={'Curso JavaScript'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                  <Card_1 imagen={img_card} alt={'imagen curso'} title={'Clase de Sumba'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                  <Card_1 aditionalClassName="first-card" imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                  <Card_1 aditionalClassName="second-card d-none d-md-block" imagen={img_card} alt={'imagen curso'} title={'Curso JavaScript'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                  <Card_1 aditionalClassName="third-card d-none d-lg-block" imagen={img_card} alt={'imagen curso'} title={'Clase de Sumba'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
               </div>
             </div>
           </div>
@@ -27,9 +28,9 @@ const Carousel_cards = (props) => {
             <div className="d-block">
               <div className="container text-center">
                 <div className="row text-center">
-                <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                <Card_1 aditionalClassName="first-card" imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                <Card_1 aditionalClassName="second-card d-none d-md-block" imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                <Card_1 aditionalClassName="third-card d-none d-lg-block" imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
                 </div>
               </div>
             </div>
@@ -39,9 +40,9 @@ const Carousel_cards = (props) => {
             <div>
               <div className="container text-center">
                 <div className="row text-center">
-                <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
-                <Card_1 imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                <Card_1 aditionalClassName="first-card" imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                <Card_1 aditionalClassName="second-card d-none d-md-block" imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
+                <Card_1 aditionalClassName="third-card d-none d-lg-block" imagen={img_card} alt={'imagen curso'} title={'Excel desde 0'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, felis ac molestie laoreet, lacus erat varius quam, in egestas risus ante in metus. Donec nec ipsum quis eros accumsan.'} />
                 </div>
               </div>
             </div>

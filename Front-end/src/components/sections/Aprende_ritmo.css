@@ -1,0 +1,8 @@
+#img-aprende {
+    margin-top:20px;
+}
+@media (min-width: 768px) {
+    #img-aprende {
+        margin-top:0px;
+    }
+}
