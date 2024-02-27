@@ -1,0 +1,41 @@
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0px solid #212529 !important;
+}
+
+.accordion-button {
+    color: #212529;
+    border: 1px solid #dedede;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px !important;
+}
+
+
+.accordion-body {
+    font-size: 16px; 
+    font-weight: normal; 
+}
+
+.accordion-header button {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+
