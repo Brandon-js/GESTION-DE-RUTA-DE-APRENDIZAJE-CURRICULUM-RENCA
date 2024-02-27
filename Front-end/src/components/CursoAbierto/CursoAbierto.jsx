@@ -1,6 +1,6 @@
 import React from 'react'
-import YoutubePlayer from 'react-player/youtube'
-import './CursoAbierto.css'
+//import YoutubePlayer from 'react-player/youtube'
+//import './CursoAbierto.css'
 
 function CursoAbierto() {
   return (
