@@ -6,19 +6,18 @@ const Navigation = () => {
   return (
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link link-info active fuente-p" aria-current="page" href="#">Cursos</a>
+            <Link to="/catalogo" class="nav-link link-info active fuente-p" aria-current="page">Cursos</Link>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link link-info active fuente-p" aria-current="page" href="#">Nosotros</a>
+            <a href="#qs-section" class="nav-link link-info active fuente-p" aria-current="page">Nosotros</a>
         </li>
         
-        <li class="nav-item">
-            <a class="nav-link link-info fuente-p" href="#">Preguntas Frecuentes</a>
+        <li class="nav-item"> 
+        <Link to="/preguntas-frecuentes" className='nav-link link-info active fuente-p'>Preguntas Frecuentes</Link>
         </li>
-        
     </ul>
-  )
+)
 }
 
 export default Navigation;

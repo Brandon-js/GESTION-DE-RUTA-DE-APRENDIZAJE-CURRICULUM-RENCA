@@ -5,7 +5,7 @@ import './Quienes_somos.css'
 
 const Quienes_somos = () => {
     return (
-        <div className="container order mb-4">
+        <div className="container order mb-4" id="qs-section">
             <div className="row contenedor align-items-center">
                 <div className="col-md-6">
                     <img className="img-fluid mb-3" src={About_us} alt="Imagen quiénes somos" />

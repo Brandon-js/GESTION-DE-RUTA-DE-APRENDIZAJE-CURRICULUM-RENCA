@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./Navbar.css";
 import logo from "../../assets/logo-renca.png";
@@ -9,12 +9,12 @@ import Login from "../login/Login"; // Asume que Login es el componente del moda
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const toggleModal = () => setIsModalOpen(!isModalOpen);
+
 
   return (
     <header className="container-fluid sticky-top">
-      <nav className="nav-style row ">
+      <nav className='nav-style row'>
         <Col xs={5} md={4} lg={2} className="text-start">
           <Link to="/">
             <img src={logo} className="img-fluid img-style" alt="logo-renca" />
@@ -25,11 +25,8 @@ const Navbar = () => {
         </Col>
 
         {/* Modo oscuro */}
-        <Col xs={5} md={4} lg={1} className="text-center" id="botones">
-                  <button
-                    id="sun-btn"
-                    className="active-sun light-mode-btn"
-                    type="button"
+        <Col xs={5} md={4} lg={1} className="text-center " id="botones">
+                  <button id="sun-btn" className="active-sun light-mode-btn" type="button"
                   >
                     <svg className="sun-icon"
                       width="25"
@@ -63,7 +60,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-controls="navCollapse"
           >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width={'30px'}><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width={'30px'}><path fill="#0ab5fd" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
           </a>
         </div>
           {/*Contenido colapsed*/}
