@@ -13,12 +13,12 @@ function CursoAbierto() {
             controls
             
             />
-        
-        <div className='row'>
-
-        </div>
-
     </div>
+    <div className='conteiner-curso-abierto'>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus vero molestias excepturi at minus temporibus eveniet, possimus quasi cumque laborum a earum illo fugit nisi officiis aliquid eius recusandae!</p>
+
+
+            </div>
     </center>
   )
 }
