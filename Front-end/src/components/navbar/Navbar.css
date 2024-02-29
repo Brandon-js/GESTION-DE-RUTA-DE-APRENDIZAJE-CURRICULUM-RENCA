@@ -14,24 +14,29 @@
 
 
 /* Dark Mode */ 
-#dark-mode {
-    background-color: #02edca;
-    border-radius: 0%;
-}
+
 #botones {
     font-size: 0;
 }
 
 .active-sun {
+    border: 1px solid black;
+    border-right: 1px solid black;;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
     height: 30px;
     width: 40px;
     margin: 10px 0px;
 }
 .default-moon {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
     height: 30px;
     width: 40px;
     border-left: 1px solid transparent
@@ -67,17 +72,58 @@
     background-color: rgb(51, 51, 51);
 }
 
-.nav-btn {
-    margin-bottom: 10px;
+.nav-btn1 {
+    width: 160px;
+    font-size: 1.1em;
+}
+.nav-btn2 {
+    width: 140px;
+    font-size: 1.1em;
 }
 
-@media (min-width: 768px) {
-    .nav-btn {
-        margin-bottom: 0px;
-        margin-top: 5px;
-    };
-    #btn-special {
-        margin-right: 10px;
+
+@media (min-width: 992px) {
+    .active-sun {
+        width: 28.5px;
+    }
+    .default-moon {
+        width: 28.5px;
+    }
+    .sun-icon {
+        width:19px;
+        margin-left: 1px;
+    }
+    .moon-icon {
+        width:15px;
     }
 }
-
+@media (min-width: 1200px ) {
+    .active-sun {
+        width: 37px;
+    }
+    .default-moon {
+        width: 37px;
+    }
+    .sun-icon {
+        width:19px;
+        margin-left: 1px;
+    }
+    .moon-icon {
+        width:15px;
+    }
+}
+@media (min-width:1400px ) {
+    .active-sun {
+        width: 45px;
+    }
+    .default-moon {
+        width: 45px;
+    }
+    .sun-icon {
+        width:24px;
+        margin-left: 1px;
+    }
+    .moon-icon {
+        width:20px;
+    }
+}
