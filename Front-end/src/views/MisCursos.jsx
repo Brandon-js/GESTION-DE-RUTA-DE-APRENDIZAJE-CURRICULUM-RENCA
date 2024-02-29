@@ -2,7 +2,7 @@ import React from 'react'
 import SideBar from '../components/side-bar/SideBar'
 import ProgresDash from '../components/curso-progreso/ProgresDash'
 import '../components/curso-progreso/ProgresDash.css'
-import CursoAbierto from '../components/CursoAbierto/CursoAbierto'
+
 
 function MisCursos() {
   return (
@@ -24,7 +24,7 @@ function MisCursos() {
         <ProgresDash tituloCurso ="Titulo Curso"/>
         <ProgresDash tituloCurso ="Titulo Curso"/>
         <ProgresDash tituloCurso ="Titulo Curso"/>
-        
+
 
         </div>
        

@@ -11,6 +11,7 @@ import MisCursos from '../views/MisCursos.jsx';
 import CursoAbierto from '../components/CursoAbierto/CursoAbierto.jsx';
 import FAQ from '../views/FAQ.jsx';
 
+
 const router = createBrowserRouter([
     {path:'/', element: <Home />},
     {path:'/registro', element: <Registro />},
