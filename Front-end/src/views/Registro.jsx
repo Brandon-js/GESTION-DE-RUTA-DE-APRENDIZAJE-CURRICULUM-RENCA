@@ -1,9 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Registro.css';
 import Modal from '../components/Modal/Modal';
 
 function Registro() {
   const [modalOpen, setModalOpen] = useState(false);
+
+  useEffect(() => {
+    // Inicialización de Google Sign-In
+    const initializeGoogleSignIn = () => {
+      window.gapi.load('auth2', () => {
+        window.gapi.auth2.init({
+          client_id: '313190689631-vnufi2r3vglcph93lgke5v3hq53f362j.apps.googleusercontent.com',
+        });
+      });
+    };
+  
+    initializeGoogleSignIn();
+  
+    // Inicialización de Facebook SDK
+    const initializeFacebookSDK = () => {
+      window.fbAsyncInit = function() {
+        window.FB.init({
+          appId      : '421271453598438', // Reemplaza {your-app-id} con tu ID de Aplicación de Facebook
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v11.0' // Usa la versión de la API de Facebook que prefieras
+        });
+        
+        window.FB.AppEvents.logPageView();   
+      };
+  
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    };
+  
+    initializeFacebookSDK();
+  }, []);
+  
 
   const handleOpenModal = () => {
     setModalOpen(true);
@@ -11,6 +49,34 @@ function Registro() {
 
   const handleCloseModal = () => {
     setModalOpen(false);
+  };
+
+  const handleGoogleSignIn = () => {
+    const auth2 = window.gapi.auth2.getAuthInstance();
+    auth2.signIn()
+      .then(user => {
+        // Aquí puedes manejar la respuesta de inicio de sesión exitoso
+        const profile = user.getBasicProfile();
+        console.log('Usuario autenticado:', profile.getName());
+      })
+      .catch(error => {
+        // Aquí puedes manejar errores de inicio de sesión
+        console.error('Error al iniciar sesión:', error);
+      });
+  };
+
+  const handleFacebookSignIn = () => {
+    window.FB.login(function(response) {
+      if (response.authResponse) {
+        console.log('Welcome!  Fetching your information.... ');
+        window.FB.api('/me', {fields: 'name,email'}, function(response) {
+          console.log('Good to see you, ' + response.name + '.');
+          // Aquí puedes manejar la respuesta, como guardar el token de acceso y los datos del usuario
+        });
+      } else {
+        console.log('User cancelled login or did not fully authorize.');
+      }
+    }, {scope: 'email'});
   };
 
   return (
@@ -44,8 +110,8 @@ Adicionalmente deberás subir tu registro social de hogares (RSH) para comprobar
               <h1 className="font-weight-bold mb-3 text-center display-5">Crea tu cuenta gratis</h1>
               <h3 className="font-weight-bold text-center h4">¡Comienza a aprender ya!</h3>
               <div className="form-group d-flex flex-column justify-content-center align-items-center">
-                <button className="btn btn-outline-light btn-google btn-sm btn-block mb-3"><i className="icon ion-logo-google lead align-middle mr-2"></i> Continuar con Google</button>
-                <button className="btn btn-outline-light btn-facebook btn-sm btn-block mb-3"><i className="icon ion-logo-facebook lead align-middle mr-2"></i> Continuar con Facebook</button>
+                <button className="btn btn-outline-light btn-google btn-sm btn-block mb-3" onClick={handleGoogleSignIn}><i className="icon ion-logo-google lead align-middle mr-2"></i> Continuar con Google</button>
+                <button className="btn btn-outline-light btn-facebook btn-sm btn-block mb-3" onClick={handleFacebookSignIn}><i className="icon ion-logo-facebook lead align-middle mr-2"></i> Continuar con Facebook</button>
                 <button className="btn btn-outline-light btn-apple btn-sm btn-block mb-3"><i className="icon ion-logo-apple lead align-middle mr-2"></i> Continuar con Apple</button>
               </div>
               <div className="form-group mb-5 mt-2">

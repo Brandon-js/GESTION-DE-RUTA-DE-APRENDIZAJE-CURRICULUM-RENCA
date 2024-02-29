@@ -1,0 +1,32 @@
+.first-card {
+    width:90%;
+    height: 90%;
+}
+.first-card button {
+    margin-top:15px
+}
+@media (min-width:768px ) {
+    .first-card {
+        width:45%;
+    }
+    .first-card button {
+        margin-top:0px;
+    }
+    .second-card {
+        width:45%;
+        height: 90%
+    }
+}
+@media (min-width: 992px) {
+    .first-card {
+        width:30%
+    }
+    .second-card {
+        width:30%;
+        height: 90%
+    }
+    .third-card {
+        width: 30%;
+        height: 90%
+    }
+}

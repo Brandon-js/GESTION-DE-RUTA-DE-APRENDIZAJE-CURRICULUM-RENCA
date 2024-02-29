@@ -5,7 +5,7 @@ import '../botones/botones.css'
 const Boton_1 = (props) => {
     return (
         <>
-            <button className='btn-primario'>
+            <button className={`btn-primario ${props.class}`}>
                 {props.text}
             </button>
         </>

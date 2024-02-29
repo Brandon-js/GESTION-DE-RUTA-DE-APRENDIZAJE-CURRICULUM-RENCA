@@ -18,6 +18,10 @@
   --cuaternario:#fda22d;
   --quinario: #0ab5fd;
 
+  --btn-fz: 1.3em; /* Variable button Font Size */
+  --card-height: 32rem; /* Variable valor default */
+  --card-width: 25rem; /* Variable valor default */
+
   --titulos: 'Heavitas', sans-serif;
   --secundarios: 'Poppins-MediumItalic', sans-serif;
 }
