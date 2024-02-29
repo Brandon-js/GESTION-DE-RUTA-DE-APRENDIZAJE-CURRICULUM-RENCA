@@ -1,6 +1,5 @@
 import React from 'react'
 import './ProgresDash.css'
-import { Link } from 'react-router-dom'
 function ProgresDash(props) {
   return (
     <div className='container-barra' >
@@ -18,10 +17,7 @@ function ProgresDash(props) {
                     </div>
                 </div>
             <div className='col'>
-                <Link to ="/curso-view">
                 <button className='boton-curso'>Continuar Curso</button>
-
-                </Link>
             </div>
         </div>
     </div>
