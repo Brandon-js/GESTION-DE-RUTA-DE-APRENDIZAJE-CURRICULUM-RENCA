@@ -1,12 +1,16 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import morgan from 'morgan';
+import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
-app.use(express.json());
 const port = process.env.PORT;
+app.use(express.json());
+app.use(morgan('dev'));
+app.use(cors());
 
 mongoose
   .connect(process.env.MONGO_CONNECTION_STRING)
