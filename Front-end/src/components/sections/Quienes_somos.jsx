@@ -1,10 +1,11 @@
 import React from 'react'
 import About_us from '../../assets/about_us.jpg'
+import './Quienes_somos.css'
 
 
 const Quienes_somos = () => {
     return (
-        <div className="container order">
+        <div className="container order mb-4" id="qs-section">
             <div className="row contenedor align-items-center">
                 <div className="col-md-6">
                     <img className="img-fluid mb-3" src={About_us} alt="Imagen quiénes somos" />
@@ -18,15 +19,15 @@ const Quienes_somos = () => {
                         </p>
                     </div>
 
-                    <div className="d-flex justify-content-center">
-                        <div className="me-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                    <div className="d-flex justify-content-center row logos-aboutus">
+                        <div className="col-4 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                         </div>
-                        <div className="me-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                        <div className="col-4 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="90px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                        <div className='col-4 text-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70px" viewBox="0 0 512 512"><path fill="#a3a5a8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                         </div>
                     </div>
                 </div>
