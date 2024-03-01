@@ -11,7 +11,7 @@ import ImgPortada2 from "../../assets/portada2.jpg";
 const Carousel_portada = () => {
 
   return (
-<div className="container text-center front-page">
+<div className="container text-center front-page mt-3">
     <Row className="align-items-center flex-column-reverse flex-md-row">
         <Col xs={12} md={6}>
                 <h2>APRENDE CON NOSOTROS</h2>

@@ -81,7 +81,9 @@
     font-size: 1.1em;
 }
 
-
+@media (min-width: 576px) {
+    
+}
 @media (min-width: 992px) {
     .active-sun {
         width: 28.5px;
