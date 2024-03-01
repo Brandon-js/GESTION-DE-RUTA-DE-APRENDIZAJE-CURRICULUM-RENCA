@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const User = require('../models/usuario'); // Asegúrate de tener la ruta correcta a tu modelo de usuario
+const User = require('../models/usuario');
 
 app.post('/auth/facebook', async (req, res) => {
   const { accessToken, userID } = req.body;
