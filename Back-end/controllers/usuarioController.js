@@ -1,5 +1,6 @@
-const express = require('express');
-const User = require('../models/usuario');
+import express from 'express';
+import User from '../models/usuario';
+
 
 const app = express();
 

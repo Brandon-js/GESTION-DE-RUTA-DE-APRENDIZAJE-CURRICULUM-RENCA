@@ -1,5 +1,5 @@
-const fetch = require('node-fetch');
-const User = require('../models/usuario');
+import fetch from 'node-fetch';
+import User from '../models/usuario';
 
 app.post('/auth/facebook', async (req, res) => {
   const { accessToken, userID } = req.body;

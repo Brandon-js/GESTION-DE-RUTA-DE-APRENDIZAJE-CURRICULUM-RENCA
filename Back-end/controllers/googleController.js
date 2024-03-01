@@ -1,5 +1,6 @@
-const { OAuth2Client } = require('google-auth-library');
-const User = require('../models/usuario');
+import { OAuth2Client } from 'google-auth-library';
+import User from '../models/usuario.js';
+
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 app.post('/auth/google', async (req, res) => {
