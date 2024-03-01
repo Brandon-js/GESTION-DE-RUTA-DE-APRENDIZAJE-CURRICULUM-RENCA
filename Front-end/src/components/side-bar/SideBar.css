@@ -1,0 +1,25 @@
+
+.cerrar-sesion{
+    background-color: #007FB7;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px #00436a;
+    border: 10px;
+    width: 200px;
+    margin-top: 200px;
+}
+
+#sideNavColor{
+    background-color: #007FB7;
+}
+
+#loguito{
+    width: 180px;
+}
+
+
+
+
+
+
+

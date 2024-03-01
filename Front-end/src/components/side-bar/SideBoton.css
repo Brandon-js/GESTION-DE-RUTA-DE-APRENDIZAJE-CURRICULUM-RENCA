@@ -1,0 +1,11 @@
+.SideBoton{
+    background-color: #007FB7;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px #004a75;
+    border: 10px;
+    margin-top: 13px;
+    width: 200px;
+
+    
+}

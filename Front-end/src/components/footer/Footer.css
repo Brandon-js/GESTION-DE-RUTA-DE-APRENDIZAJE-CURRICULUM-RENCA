@@ -1,0 +1,18 @@
+.nav-item {
+    list-style: none;
+}
+.nav-item a {
+    color: var(--quinario);
+}
+
+@media (min-width:1400px ) {
+    #logo-footer {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) {
+    .nav-footer {
+        margin-bottom:10px;
+        text-align: end;
+    }
+}
