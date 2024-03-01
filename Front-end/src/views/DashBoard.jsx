@@ -10,12 +10,12 @@ function DashBoard() {
     <>
     
     <div className='row'>
-    <div className='col-3'>
+    <div className='col-2'>
         <SideBar />
     </div>
 
 
-    <div className='col-9'>
+    <div className='col-10'>
         <div id='bienvenida' className='row'>
             <h3>Hola User</h3>
             <p>lorem ipsum</p>

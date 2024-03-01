@@ -1,11 +1,20 @@
 .SideBoton{
+    
+    padding: 10px;
     background-color: #007FB7;
     color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 2px 2px 5px 2px #004a75;
-    border: 10px;
+    width: 180px;
     margin-top: 13px;
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 
     
+}
+
+#contenido-div{
+    padding-left: 10px;
 }

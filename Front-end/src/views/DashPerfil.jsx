@@ -9,10 +9,10 @@ function DashPerfil() {
         <>
     
     <div className='row'>
-    <div className='col-3'>
+    <div className='col-2'>
         <SideBar />
     </div>
-    <div className='col-9'>
+    <div className='col-10'>
         <h3>Mi Perfil</h3>
         <p>Dashboard - Mi perfil</p>
         <div className='row'>

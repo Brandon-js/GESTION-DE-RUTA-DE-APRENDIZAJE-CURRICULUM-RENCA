@@ -7,17 +7,15 @@ function DashMensaje() {
         <>
     
     <div className='row'>
-    <div className='col-3'>
+    <div className='col-2'>
         <SideBar />
     </div>
 
 
-    <div className='col-9'>
+    <div className='col-10'>
         <div className='row'>
             <h3>Mensajes</h3>
             <p>Dashboard Mensajes</p>
-        </div>
-        <div className='row'>
             <Casilla textoMensaje="te has suscrito a X curso!" />
             <Casilla />
             <Casilla />
@@ -25,6 +23,9 @@ function DashMensaje() {
             <Casilla />
             <Casilla />
         </div>
+        
+            
+        
        
     </div>
         
