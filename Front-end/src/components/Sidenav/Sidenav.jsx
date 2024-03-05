@@ -1,5 +1,6 @@
 import './Sidenav.css'
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Sidenav() {
     return (
@@ -13,22 +14,22 @@ function Sidenav() {
                 <ul className="list-unstyled">
                     <li>
                         <button className="cstm-btn">
-                            <a href="#" className="link">Mi panel</a>
+                            <Link to={'/admin-panel'} className="link">Mi panel</Link>
                         </button>
                     </li>
                     <li>
                         <button className="cstm-btn">
-                            <a href="#" className="link">Editar cursos</a>
+                        <Link to={'/edit-section'} className="link">Editar cursos</Link>
                         </button>
                     </li>
                     <li>
                         <button className="cstm-btn">
-                            <a href="#" className="link">Subir cursos</a>
+                        <Link to={'/upload-course'} className="link">Subir cursos</Link>
                         </button>
                     </li>
                     <li>
                         <button className="cstm-btn">
-                            <a href="#" className="link">Estudiantes</a>
+                        <Link to={'/students-section'} className="link">Estudiantes</Link>
                         </button>
                     </li>
                 </ul>

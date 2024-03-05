@@ -10,6 +10,12 @@ import DashPerfil from '../views/DashPerfil.jsx';
 import MisCursos from '../views/MisCursos.jsx';
 import CursoAbierto from '../components/CursoAbierto/CursoAbierto.jsx';
 import FAQ from '../views/FAQ.jsx';
+import Admin from '../views/Admin.jsx'
+import Edit_Section from '../components/Admin/Edit_Section.jsx';
+import Upload_Section from '../components/Admin/Upload_Section.jsx';
+import Students_Section from '../components/Admin/Students_Section.jsx';
+
+
 
 const router = createBrowserRouter([
     {path:'/', element: <Home />},
@@ -23,6 +29,13 @@ const router = createBrowserRouter([
     {path:'/dash-mis-cursos',element: <MisCursos/> },
     {path:'/curso-abierto', element: <CursoAbierto />},
     {path:'/preguntas-frecuentes', element: <FAQ />},
+
+    // Admin Section
+    {path:'/admin-panel', element:<Admin />},
+    {path:'/edit-section', element:<Edit_Section />},
+    {path:'/upload-course', element:<Upload_Section />},
+    {path:'/students-section', element:<Students_Section />},
+
 ]);
 
 export default router
