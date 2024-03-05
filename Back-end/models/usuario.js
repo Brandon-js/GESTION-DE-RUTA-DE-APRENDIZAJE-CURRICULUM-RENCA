@@ -1,25 +1,31 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
+const Schema = mongoose.Schema;
 
-const userSchema = new mongoose.Schema({
-  username: {
-    type: String,
-    required: true,
-    unique: true
+const usuarioSchema = new Schema(
+  {
+    mail: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    contrasena: {
+      type: String,
+      required: true,
+    },
+    cursos: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Curso",
+        unique: true,
+      },
+    ],
   },
-  email: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  password: {
-    type: String,
-    required: true
-  },
-  googleId: String,
-  facebookId: String
-});
+  {
+    versionKey: false,
+  }
+);
 
-const User = mongoose.model('User', userSchema);
+const Usuario = mongoose.model("Usuario", usuarioSchema);
 
-export default User
+export default Usuario;
