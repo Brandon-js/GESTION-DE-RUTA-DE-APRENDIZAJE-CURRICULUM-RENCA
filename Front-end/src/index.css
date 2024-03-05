@@ -74,6 +74,14 @@ body.dark-mode #moon-btn {
 body.dark-mode #imr {
   color: #ffffff;
 }
+body.dark-mode #cont-portada {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  body.dark-mode #cont-portada {
+    color: #000000;
+  }
+}
 /* /Dark Mode */
 
 h1 {
