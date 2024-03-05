@@ -31,254 +31,44 @@ const Edit_Section = () => {
 
         <div className="container courses-list">
             {/* Main line */}
-            <div className="col-12 row">
-                <div className="col-3">
+            <div className="col-12 row env-main">
+                <div className="col-3 env-main">
                     Curso
                 </div>
-                <div className="col-2">
+                <div className="col-2 env-main">
                     Instructor
                 </div>
-                <div className="col-2">
+                <div className="col-2 env-main">
                     Fecha registro
                 </div>
-                <div className="col-3">
+                <div className="col-3 env-main">
                     Categorías
                 </div>
-                <div className="col-2">
+                <div className="col-2 env-main">
                     Estado
                 </div>
             </div>
 
             {/* Line 1 */}
-            {cursos.map((curso, i) => {
-            <div className="col-12 row" key={curso.id}>
-                <div className="col-3">
-                    
+            {cursos.map((curso) => (
+            <div className="col-12 row env-main" key={curso.id}>
+                <div className="col-3 env-main">
+                    {curso.titulo}
                 </div>
-                <div className="col-2">
-                    Instructor
+                <div className="col-2 env-main">
+                    {curso.instructor.nombre}
                 </div>
-                <div className="col-2">
+                <div className="col-2 env-main">
                     Fecha registro
                 </div>
-                <div className="col-3">
-                    Categorías
+                <div className="col-3 env-main">
+                    {curso.categoria}
                 </div>
-                <div className="col-2">
+                <div className="col-2 env-main">
                     Estado
                 </div>
             </div>
-            })}
-
-            
-            {/* Line 2 */}
-            <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-            {/* Line 3 */}
-            <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-            {/* Line 4 */}
-            <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-            {/* Line 5 */}
-            <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-                        {/* Line 6 */}
-                        <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-                        {/* Line 7 */}
-                        <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-                        {/* Line 8 */}
-                        <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-                        {/* Line 9 */}
-                        <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-                        {/* Line 10 */}
-                        <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-                        {/* Line 11 */}
-                        <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
-
-                        {/* Line 12 */}
-                        <div className="col-12 row">
-                <div className="col-3">
-                    Curso
-                </div>
-                <div className="col-2">
-                    Instructor
-                </div>
-                <div className="col-2">
-                    Fecha registro
-                </div>
-                <div className="col-3">
-                    Categorías
-                </div>
-                <div className="col-2">
-                    Estado
-                </div>
-            </div>
+            ))}
 
 
         </div>
