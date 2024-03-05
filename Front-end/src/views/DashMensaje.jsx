@@ -18,7 +18,7 @@ function DashMensaje() {
             <p>Dashboard Mensajes</p>
         </div>
         <div className='row'>
-            <Casilla />
+            <Casilla textoMensaje="te has suscrito a X curso!" />
             <Casilla />
             <Casilla />
             <Casilla />

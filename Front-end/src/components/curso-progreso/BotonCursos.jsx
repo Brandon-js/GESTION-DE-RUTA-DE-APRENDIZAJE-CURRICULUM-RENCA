@@ -1,12 +1,12 @@
 import React from 'react'
 import './BotonCursos.css'
 
-const BotonCursos = () => {
+const BotonCursos = (props) => {
   return (
     <>
         <button className='boton-cursos'>
-            <h5>N</h5>
-            <p>Estado Curso</p>
+            <h5>{props.cantidad}</h5>
+            <p>{props.estadoCurso}</p>
         </button>
     </>
   )

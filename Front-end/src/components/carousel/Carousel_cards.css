@@ -1,0 +1,32 @@
+.cardstyle1 {
+    width:90%;
+    height: 90%;
+}
+.cardstyle1 button {
+    margin-top:15px
+}
+@media (min-width:768px ) {
+    .cardstyle1 {
+        width:45%;
+    }
+    .cardstyle1 button {
+        margin-top:0px;
+    }
+    .cardstyle2 {
+        width:45%;
+        height: 90%
+    }
+}
+@media (min-width: 992px) {
+    .cardstyle1 {
+        width:30%
+    }
+    .cardstyle2 {
+        width:30%;
+        height: 90%
+    }
+    .cardstyle3 {
+        width: 30%;
+        height: 90%
+    }
+}

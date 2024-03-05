@@ -29,7 +29,7 @@ const Home = () => {
     </div>
       <Carousel_cards id={'idCarrusel-2'}/>
     <div className='text-center m-4'>
-      <Link to="/login">
+      <Link to="/catalogo">
         <Boton_2 text='Explorar más cursos'/>
       </Link>
     </div>

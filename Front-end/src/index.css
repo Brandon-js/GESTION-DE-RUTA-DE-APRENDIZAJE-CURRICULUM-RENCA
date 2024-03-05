@@ -11,7 +11,21 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primario: #ceff26;
+  --secundario: #fd571e;
+  --terciario: #02edca;
+  --cuaternario:#fda22d;
+  --quinario: #0ab5fd;
+
+  --btn-fz: 1.3em; /* Variable button Font Size */
+  --card-height: 32rem; /* Variable valor default */
+  --card-width: 25rem; /* Variable valor default */
+
+  --titulos: 'Heavitas', sans-serif;
+  --secundarios: 'Poppins-MediumItalic', sans-serif;
 }
+
 
 a {
   font-weight: 500;
@@ -22,12 +36,59 @@ a:hover {
   color: #535bf2;
 }
 
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
 
+
+/* Dark Mode */
+
+body.dark-mode {
+  --primario: #88a61b;     
+  --secundario: #d05122;   
+  --terciario: #00bba3;    
+  --cuaternario: #e18d32;  
+  --quinario: #4a86b9;     
+}
+body.dark-mode .nav-style{
+  background-color: #1a1a1a;
+  color:#ffffff;
+}
+body.dark-mode .card {
+  background-color: #585858;
+  color: #ffffff
+}
+body.dark-mode .dm-selector {
+  background-color: #4a86b9;
+}
+body.dark-mode .collapse-card {
+  background-color: #1a1a1a;
+}
+body.dark-mode #sun-btn {
+  background-color: #ffffff;
+}
+body.dark-mode #moon-btn {
+  background-color: var(--quinario);
+}
+body.dark-mode #imr {
+  color: #ffffff;
+}
+body.dark-mode #cont-portada {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  body.dark-mode #cont-portada {
+    color: #000000;
+  }
+}
+/* /Dark Mode */
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 
 button {
   border-radius: 8px;
@@ -38,11 +99,6 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-
-:root{
-    --titulos: 'Heavitas', sans-serif;
-    --secundarios: 'Poppins-MediumItalic', sans-serif;
 }
 
 button:focus,

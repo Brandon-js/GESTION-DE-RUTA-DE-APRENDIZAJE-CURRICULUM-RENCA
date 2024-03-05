@@ -2,6 +2,7 @@ import React from 'react'
 import img_aprende from '../../assets/aprende_ritmo.png'
 import Boton_2 from '../botones/Boton_2'
 import { Link } from 'react-router-dom'
+import './Aprende_ritmo.css'
 
 
 const Aprende_ritmo = () => {
@@ -24,7 +25,7 @@ const Aprende_ritmo = () => {
             </div>
 
             <div className="col-md-6">
-                <img className="img-fluid" src={img_aprende} alt="imagen aprende a tu ritmo" />
+                <img id='img-aprende' className="img-fluid" src={img_aprende} alt="imagen aprende a tu ritmo" />
             </div>
         </div>
     </div>

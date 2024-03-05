@@ -1,29 +1,23 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
     <ul class="nav justify-content-center">
-        <li class="nav-item dropdown">
-            <a class="nav-link link-info dropdown-toggle fuente-p" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Explorar Cursos
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+        <li class="nav-item">
+            <Link to="/catalogo" class="nav-link link-info active fuente-p" aria-current="page">Cursos</Link>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link link-info active fuente-p" aria-current="page" href="#">Nosotros</a>
+            <a href="#qs-section" class="nav-link link-info active fuente-p" aria-current="page">Nosotros</a>
         </li>
         
-        <li class="nav-item">
-            <a class="nav-link link-info fuente-p" href="#">Preguntas Frecuentes</a>
+        <li class="nav-item"> 
+        <Link to="/preguntas-frecuentes" className='nav-link link-info active fuente-p'>Preguntas Frecuentes</Link>
         </li>
-        
     </ul>
-  )
+)
 }
 
-export default Navigation
+export default Navigation;

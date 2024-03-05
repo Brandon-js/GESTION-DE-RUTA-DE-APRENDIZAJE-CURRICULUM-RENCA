@@ -1,30 +1,25 @@
-#bar-1 {
-    background-color: var(--secundario);
-    width: 100px;
-    height: 10px;
-    margin-right: 20px;
+.nav-item {
+    list-style: none;
 }
-#bar-2 {
-    background-color: var(--cuaternario);
-    width: 100px;
-    height: 10px;
-    margin-right: 20px;
+.nav-item a {
+    color: var(--quinario);
 }
-#bar-3 {
-    background-color: var(--primario);
-    width: 100px;
-    height: 10px;
-    margin-right: 20px;
+#final-footer {
+    border-top: 1px solid;
 }
-#bar-4 {
-    background-color: var(--terciario);
-    width: 100px;
-    height: 10px;
-    margin-right: 20px;
+
+#imr {
+    color: black;
 }
-#bar-5 {
-    background-color: var(--quinario);
-    width: 100px;
-    height: 10px;
-    margin-right: 20px;
+
+@media (min-width:1400px ) {
+    #logo-footer {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) {
+    .nav-footer {
+        margin-bottom:10px;
+        text-align: end;
+    }
 }

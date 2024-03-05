@@ -270,7 +270,7 @@ background-color: #0ab5fd;
 /*fin modal */
 
 .slide-in-right {
-  animation: slideInRight 1s ease-out; /* Utiliza la animación slideInRight con duración de 0.3 segundos */
+  animation: slideInRight 0.5s ease-out; /* Utiliza la animación slideInRight con duración de 0.3 segundos */
 }
 
 
