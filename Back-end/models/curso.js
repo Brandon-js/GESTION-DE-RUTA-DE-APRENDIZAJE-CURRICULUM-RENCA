@@ -13,7 +13,6 @@ const cursoSchema = new Schema(
     imagenUrl: { type: String, required: true },
     instructor: instructorSchema,
     modulos: [moduloSchema],
-    rating: {type: Number},
   },
   {
     versionKey: false,
