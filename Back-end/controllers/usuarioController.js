@@ -2,8 +2,6 @@ import express from 'express';
 import User from '../models/usuario';
 
 
-const app = express();
-
 app.post('/registro', async (req, res) => {
   try {
     const { nombre, correoElectronico, contraseña } = req.body;
@@ -23,6 +21,3 @@ app.post('/registro', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('Servidor escuchando en el puerto 3000');
-});
