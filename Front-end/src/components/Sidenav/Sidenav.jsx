@@ -1,36 +1,45 @@
 import './Sidenav.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo_Renca from '../../assets/logo-renca.png'
 
 function Sidenav() {
     return (
         <div className="grid-sidenav">
             <div className="sidenav-header">
                 <a href="/">
-                    <img src="\Front-end\src\assets\logo-renca.png" height="64px" width="160px" alt="Logo-Renca" className="sidenav-logo" />
+                    <img src={Logo_Renca} height="64px" width="160px" alt="Logo-Renca" className="sidenav-logo" />
                 </a>
             </div>
             <div className="sidenav-body">
                 <ul className="list-unstyled">
                     <li>
-                        <button className="cstm-btn">
-                            <Link to={'/admin-panel'} className="link">Mi panel</Link>
+                    <Link to={'/admin-panel'} className="link">
+                        <button className="cstm-btn">Mi panel
                         </button>
+                    </Link>
+
                     </li>
                     <li>
+                    <Link to={'/edit-section'} className="link">
                         <button className="cstm-btn">
-                        <Link to={'/edit-section'} className="link">Editar cursos</Link>
+                        Editar cursos
                         </button>
+                    </Link>
                     </li>
                     <li>
+                    <Link to={'/upload-course'} className="link">
                         <button className="cstm-btn">
-                        <Link to={'/upload-course'} className="link">Subir cursos</Link>
+                        Subir cursos
                         </button>
+                    </Link>
                     </li>
                     <li>
+                    <Link to={'/students-section'} className="link">
                         <button className="cstm-btn">
-                        <Link to={'/students-section'} className="link">Estudiantes</Link>
+                        Estudiantes
                         </button>
+                    </Link>
                     </li>
                 </ul>
             </div>
