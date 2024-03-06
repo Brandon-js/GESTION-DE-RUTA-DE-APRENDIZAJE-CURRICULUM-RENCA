@@ -48,12 +48,31 @@
 
   }
 
+
+  h5{
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  #barra-busqueda{
+    width: 80%;
+  }
+
+
+  /*
+    BARRA PROGRESO
+  */
+  #percentege{
+    text-align: center;
+    font-weight: 900;
+  }
+
   .progress-fill{
-    border-color: black;
+    border-color: rgb(0, 0, 0);
     border: 2px;
     border-radius: 25px;
     height: 30px;
-    width: 120px;
+   
     background-color: rgb(146, 212, 52);
     
   }
@@ -62,12 +81,8 @@
 
     border-radius: 25px;
     height: 30px;
-    width: 200px;
-    background-color: rgb(178, 178, 178);
+    width: 100%;
+    background-color: rgb(161, 161, 161);
     border: 2px;
     border-color: black;
-  }
-
-  h5{
-    padding-top: 10px;
   }

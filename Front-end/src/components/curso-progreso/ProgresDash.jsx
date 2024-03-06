@@ -1,6 +1,18 @@
 import React from 'react'
 import './ProgresDash.css'
+import { useState } from 'react'
+
+
 function ProgresDash(props) {
+    const [porcentaje, setPorcentaje] = useState(props.porcentajeInicial || 0);
+
+    const actualizarPorcentaje = (nuevoPorcentaje) => {
+        if (nuevoPorcentaje >= 0 && nuevoPorcentaje <= 100) {
+          setPorcentaje(nuevoPorcentaje);
+        }
+      };
+
+
   return (
     <div className='container-barra' >
         <div className='row'>
@@ -10,8 +22,9 @@ function ProgresDash(props) {
             <div className='col'>
                 <div class="progress-bar-horizontal">
                     <div class="progress-track">
-                        <div class="progress-fill">
-                                <span>60%</span>
+                        <div class="progress-fill" style={{ width: `${porcentaje}%` }}>
+                        
+                                <span><p id='percentege'>{`${porcentaje}%`}</p></span>
                             </div>
                         </div>
                     </div>
