@@ -1,4 +1,6 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
+
+const Schema = mongoose.Schema;
 
 
 const userSchema = new mongoose.Schema({
@@ -54,6 +56,31 @@ const userSchema = new mongoose.Schema({
 
 });
 
-const User = mongoose.model('User', userSchema);
+const usuarioSchema = new Schema(
+  {
+    mail: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    contrasena: {
+      type: String,
+      required: true,
+    },
+    cursos: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Curso",
+        unique: true,
+      },
+    ],
+  },
+  {
+    versionKey: false,
+  }
+);
 
-export default User
+
+const Usuario = mongoose.model("Usuario", usuarioSchema);
+
+export default Usuario;

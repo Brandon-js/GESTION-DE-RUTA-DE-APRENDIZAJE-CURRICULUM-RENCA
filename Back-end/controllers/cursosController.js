@@ -24,6 +24,17 @@ const getCursoById = async (req, res) => {
   }
 };
 
+//Función que busca varios cursos por su ID, recibiendo los IDs como un arreglo de JSON.
+const getCursosByIds = async (req, res) => {
+  try {
+    const ids = req.body.ids;
+    const cursos = await Cursos.find({ _id: { $in: ids } });
+    res.status(200).json(cursos);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 //Función que crea un nuevo curso, con los datos enviados en el cuerpo de la request.
 const createCurso = async (req, res) => {
   try {
@@ -65,4 +76,11 @@ const deleteCurso = async (req, res) => {
   }
 };
 
-export { getCursos, getCursoById, createCurso, updateCurso, deleteCurso };
+export {
+  getCursos,
+  getCursoById,
+  createCurso,
+  updateCurso,
+  deleteCurso,
+  getCursosByIds,
+};
