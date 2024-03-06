@@ -3,3 +3,13 @@
         width: 90px;
     }
 }
+@media (min-width: 768px) {
+    #about {
+        margin-top:20px;
+    }
+}
+@media (min-width: 992px) {
+    #about {
+        margin-top:0px;
+    }
+}
