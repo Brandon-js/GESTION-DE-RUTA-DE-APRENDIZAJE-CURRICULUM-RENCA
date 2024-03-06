@@ -1,0 +1,28 @@
+
+#portada {
+    position: relative;
+}  
+ 
+#imagen-con-titulo {
+    position: relative;
+    text-align: center;
+}
+
+#imagen-con-titulo img {
+    display: block;
+    height: 670px;
+    margin-left: -40px;
+    
+}
+
+#titulo-portada {
+    position: absolute; /* Posición absoluta con respecto al contenedor */
+    margin-top: -600px;
+    left: 50%; /* Posición en el centro horizontal */
+    transform: translate(-50%, -50%); /* Corrige el centro para el título */
+    color: rgb(7, 7, 7); /* Color del texto */
+    background-color: rgba(250, 250, 250, 0.5); /* Fondo semi-transparente para mayor legibilidad */
+    padding: 10px 20px; /* Espaciado interno para el título */
+}
+
+
