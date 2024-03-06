@@ -2,6 +2,7 @@ import React from 'react'
 import SideBar from '../components/side-bar/SideBar'
 import iconUser from '../assets/icon-user.png'
 import '../components/curso-progreso/DashPerfil.css'
+import SidenavUser from '../components/SidenavUser/SidenavUser'
 
 function DashPerfil() {
   return (
@@ -10,9 +11,9 @@ function DashPerfil() {
     
     <div className='row'>
     <div className='col-3'>
-        <SideBar />
+        <SidenavUser />
     </div>
-    <div className='col-9'>
+    <div id='dentro' className='col-9'>
         <h3>Mi Perfil</h3>
         <p>Dashboard - Mi perfil</p>
         <div className='row'>
@@ -23,7 +24,7 @@ function DashPerfil() {
                     <button className='DashPerfilButton'>Borrar foto</button>
         </div>
         <div >
-        <form>
+        <form id='formulario-user' >
                         <div className="row mb-3">
                             <div className="form-group col-md-4">
                                 <label className="font-weight-bold">Nombre: </label>
@@ -35,7 +36,7 @@ function DashPerfil() {
                             </div>
                             <div className="form-group col-md-4" id='fecha'>
                                 <label className="font-weight-bold">Fecha de nacimiento: </label>
-                                <input type="text" className="form-control" placeholder="DD/MM/AA"/>
+                                <input type="date" className="form-control" placeholder="DD/MM/AA"/>
                             </div>
                         </div>
                         <div className="row mb-2">
@@ -62,9 +63,8 @@ function DashPerfil() {
                         </div>
                         <div className="form-group mb-3">
                             <label className="font-weight-bold">Registro social de hogares:</label>
-                            <input type="text" className="form-control" placeholder="archivo PDF/JPG/PNG/word"/>
+                            <input type="file" className="form-control" placeholder="archivo PDF/JPG/PNG/word"/>
                         </div>
-                        <button className='DashPerfilButton'>Subir archivo</button>
                         <div>
                             <button className='boton-curso'>Guardar</button>
                         </div>                        

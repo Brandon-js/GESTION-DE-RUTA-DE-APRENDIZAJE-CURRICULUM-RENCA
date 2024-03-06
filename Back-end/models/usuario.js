@@ -2,11 +2,7 @@ import mongoose from 'mongoose';
 
 
 const userSchema = new mongoose.Schema({
-  username: {
-    type: String,
-    required: true,
-    unique: true
-  },
+  
   email: {
     type: String,
     required: true,
@@ -17,7 +13,45 @@ const userSchema = new mongoose.Schema({
     required: true
   },
   googleId: String,
-  facebookId: String
+  facebookId: String,
+
+  direccion:{
+    type: String,
+    required: false
+  },
+
+  nombre:{
+    type: String,
+    required: false
+  },
+
+  apellido:{
+    type: String,
+    required: false
+  },
+
+  birthdate:{
+    type: Date,
+    required: false
+  },
+
+  genero:{
+    type: String,
+    required: false
+  },
+
+  educacion:{
+    type: String,
+    required: false
+  }
+
+
+
+
+
+
+
+
 });
 
 const User = mongoose.model('User', userSchema);
