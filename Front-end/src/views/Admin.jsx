@@ -6,8 +6,10 @@ const Admin = () => {
     <>
     <Sidenav />
     <h1>Admin Panel</h1>
+    <p>maldito lucianohot</p>
+  
     </>
-  )
+  ) 
 }
 
 export default Admin
