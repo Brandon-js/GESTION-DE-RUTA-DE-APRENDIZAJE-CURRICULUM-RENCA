@@ -1,0 +1,42 @@
+#contenedor-azulito{
+    background: #0ab5fd;
+    margin-bottom: 30px;
+}
+.conetendor-azul{
+    background-color: #0ab5fd;
+    padding: 200px;
+    align-items: center;
+    position: absolute;
+    margin-top: 50px;
+
+}
+
+.titulo-instructor{
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    font-weight: 100px;
+    
+}
+
+#texto-instructor{
+    color: #fff;
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px;
+ 
+
+}
+
+.imgInstructor{
+    text: center
+}
+
+
+
+.conetedor-textos{
+    text-align: right;
+    color: #ffffff;
+
+}
