@@ -11,6 +11,16 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', isDarkMode);
+  }, [isDarkMode])
+
 
   return (
     <header className="container-fluid sticky-top">
@@ -26,7 +36,7 @@ const Navbar = () => {
 
         {/* Modo oscuro */}
         <Col xs={5} md={4} lg={1} className="text-center " id="botones">
-                  <button id="sun-btn" className="active-sun light-mode-btn" type="button"
+                  <button id="sun-btn" className={`active-sun light-mode-btn ${isDarkMode ? '' : ''}`} type="button" onClick={toggleDarkMode}
                   >
                     <svg className="sun-icon"
                       width="25"
@@ -39,7 +49,8 @@ const Navbar = () => {
                       />
                     </svg>
                   </button>
-                  <button id="moon-btn" className="default-moon" type="button">
+
+                  <button id="moon-btn" className={`default-moon ${isDarkMode ? '' : ''}`} type="button" onClick={toggleDarkMode}> 
                     <svg className="moon-icon"
                       width="20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -53,24 +64,24 @@ const Navbar = () => {
 
         {/* Colapsador Responsive */}
         <div className="col-2 col-md-4 text-end d-lg-none">
-          <a
-            data-bs-toggle="collapse"
-            href="#navCollapse"
-            role="button"
-            aria-expanded="false"
-            aria-controls="navCollapse"
-          >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width={'30px'}><path fill="#0ab5fd" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-          </a>
+            <a
+              data-bs-toggle="collapse"
+              href="#navCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="navCollapse"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width={'30px'}><path fill="#0ab5fd" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </a>
         </div>
           {/*Contenido colapsed*/}
           <div className="collapse d-lg-none" id="navCollapse">
-            <div className="card card-body">
+            <div className="card card-body collapse-card">
               <Navigation />
 
               <Row className="text-center justify-content-center log-reg">
                 {/* Modifica este enlace para abrir el modal en lugar de navegar */}
-                <Col xs={12} sm={5}>
+                <Col xs={12}>
                 <button
                   onClick={toggleModal}
                   className="your-button-class nav-coll-btn1"
@@ -78,7 +89,7 @@ const Navbar = () => {
                   INICIAR SESIÓN
                 </button>
                 </Col>
-                <Col xs={12} sm={6}>
+                <Col xs={12} className="mt-2">
                 <Link to="/registro">
                   <Boton_2 text="REGISTRARME" className="nav-coll-btn2" />
                 </Link>

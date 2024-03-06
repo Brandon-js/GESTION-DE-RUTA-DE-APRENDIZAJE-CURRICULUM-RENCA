@@ -4,6 +4,13 @@
 .nav-item a {
     color: var(--quinario);
 }
+#final-footer {
+    border-top: 1px solid;
+}
+
+#imr {
+    color: black;
+}
 
 @media (min-width:1400px ) {
     #logo-footer {

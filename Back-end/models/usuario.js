@@ -1,13 +1,86 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
+
+const Schema = mongoose.Schema;
+
 
 const userSchema = new mongoose.Schema({
-  nombre: { type: String, required: true },
-  correoElectronico: { type: String, required: true, unique: true },
-  contraseña: { type: String, required: true },
-  googleId: { type: String },
-  facebookId: { type: String }
+  
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  googleId: String,
+  facebookId: String,
+
+  direccion:{
+    type: String,
+    required: false
+  },
+
+  nombre:{
+    type: String,
+    required: false
+  },
+
+  apellido:{
+    type: String,
+    required: false
+  },
+
+  birthdate:{
+    type: Date,
+    required: false
+  },
+
+  genero:{
+    type: String,
+    required: false
+  },
+
+  educacion:{
+    type: String,
+    required: false
+  }
+
+
+
+
+
+
+
+
 });
 
-const User = mongoose.model('User', userSchema);
+const usuarioSchema = new Schema(
+  {
+    mail: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    contrasena: {
+      type: String,
+      required: true,
+    },
+    cursos: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Curso",
+        unique: true,
+      },
+    ],
+  },
+  {
+    versionKey: false,
+  }
+);
 
-module.exports = User;
+
+const Usuario = mongoose.model("Usuario", usuarioSchema);
+
+export default Usuario;

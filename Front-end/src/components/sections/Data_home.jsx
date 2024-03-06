@@ -4,7 +4,7 @@ import "./Data_home.css";
 const Data_home = () => {
   return (
     <>
-      <div className="container-fluid justify-content-center d-md-none data-content">
+      <div className="container-fluid justify-content-center d-md-none data-content dm-selector">
         <div className="carousel slide ms-3" id="data-content-slide" data-bs-ride="carousel">
           <div className="carousel-inner">
 
@@ -55,7 +55,7 @@ const Data_home = () => {
       </div>
 
       {/* Display 768px */}
-      <div className="container-fluid justify-content-center d-none d-md-block data-content">
+      <div className="container-fluid justify-content-center d-none d-md-block data-content dm-selector">
         <div className="row">
           <div className="col-4 row ms-3">
             <div className="text-end col-12">

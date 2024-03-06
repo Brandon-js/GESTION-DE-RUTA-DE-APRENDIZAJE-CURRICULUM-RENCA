@@ -81,8 +81,10 @@ const Footer = () => {
         </div>
         
 
-          <div class="container text-center">
+          <div id='final-footer' class="container d-flex align-items-center justify-content-center text-center">
+            <Link id='imr' className='align-items-center' to='https://renca.cl/'>
               <p>© 2024 Ilustre Municipalidad de Renca</p>
+            </Link>
           </div>
       </div>
     </div>
