@@ -4,4 +4,14 @@
 }
 .env-main {
     border: 1px solid black;
+    cursor: pointer;
 }   
+.env-cursos {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.order-btn {
+    width:10px;
+    height:2px;
+}
