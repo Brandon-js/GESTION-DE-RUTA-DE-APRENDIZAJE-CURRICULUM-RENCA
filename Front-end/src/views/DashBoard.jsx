@@ -30,13 +30,14 @@ function DashBoard() {
             </div>
             <div id='azul' className='col'>
             <BotonCursos colorfondo="#0290cd" cantidad="10" estadoCurso="Cursos inscritos"/>
-            </div>
+            </div>      
         </div>
+        
         <div>
             <ProgresDash tituloCurso ="Crea tu propio CV" porcentajeInicial={50} />
-            <ProgresDash tituloCurso ="Excel" porcentajeInicial={100}/>
-            <ProgresDash tituloCurso ="Titulo Curso" porcentajeInicial={70}/>
-            <ProgresDash tituloCurso ="Titulo Curso" porcentajeInicial={60}/>
+            <ProgresDash tituloCurso ="Excel" porcentajeInicial={85}/>
+            <ProgresDash tituloCurso ="Cueca brava" porcentajeInicial={70}/>
+            <ProgresDash tituloCurso ="Discurso poeta" porcentajeInicial={60}/>
         </div>
     </div>
     </div>
