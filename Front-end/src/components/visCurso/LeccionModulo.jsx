@@ -3,7 +3,7 @@
 
 const LeccionModulo = ({ leccion, isSelected, onClick }) => {
     return (<div>
-        <li onClick={onClick}>
+        <li className="mb-2" onClick={onClick}>
             <a className="link">{leccion.nombre}
             </a>
         </li>

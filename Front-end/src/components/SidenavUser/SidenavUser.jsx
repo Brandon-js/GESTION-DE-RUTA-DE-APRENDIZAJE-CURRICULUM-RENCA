@@ -1,6 +1,8 @@
 import './SidenavUser.css'
 import React from 'react';
 import logo from '../../assets/logo-renca.png'
+import { Link } from 'react-router-dom';
+
 
 function SidenavUser() {
     return (
@@ -13,31 +15,36 @@ function SidenavUser() {
             <div className="sidenav-body">
                 <ul className="list-unstyled">
                     <li>
-                        <button className="cstm-btn">
-                            <a href="/dashboard-user" className="link">Mi panel</a>
+                    <Link to={'/dashboard-user'} className="link">
+                        <button className="cstm-btn">Mi panel
                         </button>
+                    </Link>
                     </li>
                     <li>
-                        <button className="cstm-btn">
-                            <a href="/dashboard-mensaje" className="link">Mi perfil</a>
+                    <Link to={'/dashboard-mensaje'} className="link">
+                        <button className="cstm-btn">Mi perfil
                         </button>
+                    </Link>
                     </li>
                     <li>
-                        <button className="cstm-btn">
-                            <a href="/dashMensaje" className="link">Mensajes</a>
+                    <Link to={'/dashMensaje'} className="link">
+                        <button className="cstm-btn">Mensajes
                         </button>
+                    </Link>
                     </li>
                     <li>
-                        <button className="cstm-btn">
-                            <a href="/dash-mis-cursos" className="link">Mis cursos</a>
+                    <Link to={'/dash-mis-cursos'} className="link">
+                        <button className="cstm-btn">Mis cursos
                         </button>
+                    </Link>
                     </li>
                 </ul>
             </div>
             <div className="sidenav-footer">
-                <button className="cstm-btn">
-                    <a href="/" className="link">Cerrar sesión</a>
-                </button>
+            <Link to={'/'} className="link">
+                        <button className="cstm-btn">Cerrar sesion
+                        </button>
+                    </Link>
             </div>
         </div>
     );

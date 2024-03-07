@@ -9,7 +9,6 @@ router.post("/login", usuarioController.loginUsuario);
 router.get("/usuario", verificarToken, usuarioController.getUsuario);
 router.post(
   "/inscribir-curso",
-  verificarToken,
   usuarioController.inscribirCurso
 );
 

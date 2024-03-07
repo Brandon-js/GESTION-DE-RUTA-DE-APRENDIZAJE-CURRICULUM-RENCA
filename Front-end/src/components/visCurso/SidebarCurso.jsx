@@ -1,6 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import ModuloSidebar from "./ModuloSidebar.jsx";
+import { Link } from 'react-router-dom';
+import Logo_Renca from '../../assets/logo-renca.png'
+import Boton_2 from "../botones/boton_2.jsx";
 
 const SidebarCurso = (props) => {
 
@@ -16,9 +19,9 @@ const SidebarCurso = (props) => {
     return (
         <div className="sidenav">
             <a href="/">
-                <img src="/logo-renca.png" alt="Logo-Renca" className="sidenav-logo" />
+                <img src={Logo_Renca} height="64px" width="160px" alt="Logo-Renca" className="sidenav-logo" />
             </a>
-            <ul className="list-unlysted">
+            <ul className="list-unstyled">
                 {props.infoCurso.modulos && props.infoCurso.modulos.map((modulo, index) => (
                     <ModuloSidebar
                         key={index}
@@ -28,9 +31,7 @@ const SidebarCurso = (props) => {
                     />
                 ))}
                 <li className="sidebar-footer">
-                    <button className="btn">
-                        Cerrar Sesión
-                    </button>
+                <Boton_2 text='Cerrar sesión'/>
                 </li>
             </ul>
         </div>)
