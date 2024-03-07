@@ -51,7 +51,7 @@ const Admin = () => {
 
         <div className="reviewSection">
           <h2>Cursos en revisión</h2>
-          <div className="container">
+          <div className="container-admin-panel">
             <div className="reviewContainer" onClick={handleEdit}>
               Curso 1
               <button className="editButton">Seguir editando</button>

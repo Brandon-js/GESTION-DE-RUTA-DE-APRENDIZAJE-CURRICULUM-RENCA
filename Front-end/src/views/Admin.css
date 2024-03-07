@@ -1,5 +1,6 @@
 /* En tu archivo CSS Admin.css */
-.container {
+
+.container-admin-panel {
     margin-left: 30px; /* Ajusta el margen izquierdo para compensar el sidebar */
     padding: 20px;/* Añade un poco de espacio alrededor del contenido */
   }
