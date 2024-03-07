@@ -1,19 +1,22 @@
 import React from 'react';
 import './Contenedor_infocurso.css'; 
+import imgQueaprendere from '../../assets/aprende_ritmo.png'
 
 function SobreNosotros() {
   return (
-    <section className="contenedor sobre-nosotros">
-      <h2 className="titulo">Qué aprenderé?</h2>
-      <div className="contenedor-sobre-nosotros">
-        <img src="img/80f27ada-9001-4f9c-a2c5-a9ffd715637e_Screen+Shot+2023-02-09+at+1.11.48+PM.avif" alt="" className="imagen-about-us" />
-        <div className="contenido-textos">
-          <h3><span>1</span>Componentes básicos de formatos, organización y cálculos simples.</h3>
+    <section className="contenedor row mb-5">
+     
+      <div className="contenedor-sobre-nosotros col-6">
+        <img src={imgQueaprendere} alt="" className="imagen-about-us" />
+        </div>
+        <div className="contenido-textos col-6" >
+         <h2 className="titulo text-center">¿QUÉ APRENDERÉ?</h2>
+          <h3>Componentes básicos de formatos, organización y cálculos simples.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde cum porro excepturi, eaque quam ex esse obcaecati accusantium sapiente nam iure cupiditate veritatis voluptatem facilis. Excepturi placeat sequi sapiente numquam.</p>
-          <h3><span>2</span>Organización, fórmulas y funciones básicas de manejo de datos</h3>
+          <h3>Organización, fórmulas y funciones básicas de manejo de datos</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde cum porro excepturi, eaque quam ex esse obcaecati accusantium sapiente nam iure cupiditate veritatis voluptatem facilis. Excepturi placeat sequi sapiente numquam.</p>
         </div>
-      </div>
+      
     </section>
   );
 }

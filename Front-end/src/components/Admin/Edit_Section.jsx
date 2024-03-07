@@ -4,6 +4,7 @@ import './Edit_Section.css'
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb'
 import SearchBar from '../SearchBar/SearchBar'
 import SearchList from "../SearchBar/SearchList";
+import {Link} from 'react-router-dom'
 
 const Edit_Section = () => {
 
@@ -100,7 +101,9 @@ const Edit_Section = () => {
             {cursosOrdenados.map((curso) => (
             <div className="col-12 row" key={curso.id}>
                 <div className="col-3 env-cursos">
-                    {curso.titulo}
+                    <Link to="/upload-course">
+                        {curso.titulo}
+                    </Link>
                 </div>
                 <div className="col-2 env-cursos">
                     {curso.instructor.nombre}
@@ -121,6 +124,7 @@ const Edit_Section = () => {
         </div>
 
     </div>
+    
     
     </>
   )

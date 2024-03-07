@@ -111,37 +111,35 @@ const Catalogo_portada = () => {
 
         {/* Full screen categories */}
         <div className="carousel slide mt-4 container-fluid d-flex d-none d-md-block text-center align-items-center" id="categoriesCarousel">
-            <div className="carousel-inner text-center">
+            <div className="carousel-inner text-center mt-2">
                 {/* Carrusel cat.1 */}
                 <div className="carousel-item active">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center d-flex">
 
-                        <div className="col-2 text-center">
+                        <div className="col-3 text-center">
+                            <img className='icons' src={iconStar} style={{width:'40px'}} alt='categoría cursos populares'/>
+                        </div>
+
+                        <div className="col-3 text-center">
                             <img className='ms-4 icons' src={iconLaptop} style={{width:'40px'}} alt='categoría tecnolgía'/>
                         </div>
 
-                        <div className="col-2 text-center">
+                        <div className="col-3 text-center">
                             <img className='me-4 icons' src={iconLanguage} style={{width:'40px'}} alt='categoría lenguaje e idiomas'/>
                         </div>
 
-                        <div className="col-auto text-center">
-                            <img className='icons' src={iconStar} style={{width:'40px'}} alt='categoría cursos populares'/>
-                        </div>
                 
-                        <div className="col-2 text-center">
+                        <div className="col-3 text-center">
                             <img className='ms-4 icons' src={iconFinance} style={{width:'40px'}} alt='categoría finanzas'/>
                         </div>
 
-                        <div className="col-2 text-center">
-                            <img className='icons' src={iconBrain} style={{width:'40px'}} alt='categoría desarrollo personal'/>
-                        </div>
 
                     </div>
                 </div>
                 
                 {/* Carrusel cat.2 */}
                 <div className="carousel-item">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center d-flex">
                         
                         <div className="col-3 text-center">
                             <img className='me-4 icons' src={iconScience} style={{width:'40px'}} alt='categoría lenguaje e idiomas'/>
@@ -152,7 +150,7 @@ const Catalogo_portada = () => {
                         </div>
 
                         <div className="col-3 text-center">
-                            <img className='icons' src={iconEllipsis} style={{width:'40px'}} alt='categoría arte'/>
+                            <img className='icons' src={iconBrain} style={{width:'40px'}} alt='categoría desarrollo personal'/>
                         </div>
                     
                         
