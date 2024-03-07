@@ -1,6 +1,8 @@
 import React from 'react'
 import './ProgresDash.css'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'; 
+
 
 
 function ProgresDash(props) {
@@ -12,12 +14,17 @@ function ProgresDash(props) {
         }
       };
 
+      const navigate = useNavigate();
+
+      const handleContinuarCurso = () => {
+          navigate('/viscurso', { state: { infoCurso: props.infoCurso } });
+      }
 
   return (
     <div className='container-barra' >
         <div className='row'>
             <div className='col'>
-                <h5>{props.tituloCurso}</h5>
+                <h5>{props.infoCurso.titulo}</h5>
             </div>
             <div className='col'>
                 <div class="progress-bar-horizontal">
@@ -30,7 +37,7 @@ function ProgresDash(props) {
                     </div>
                 </div>
             <div className='col'>
-                <button className='boton-curso'>Continuar Curso</button>
+            <button className='boton-curso' onClick={handleContinuarCurso}>Continuar Curso</button>
             </div>
         </div>
     </div>

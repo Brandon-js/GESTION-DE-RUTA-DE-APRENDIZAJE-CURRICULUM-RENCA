@@ -14,6 +14,7 @@ import Admin from '../views/Admin.jsx'
 import Edit_Section from '../components/Admin/Edit_Section.jsx';
 import Upload_Section from '../components/Admin/Upload_Section.jsx';
 import Students_Section from '../components/Admin/Students_Section.jsx';
+import VisCurso from '../components/VisCurso/VisCurso.jsx';
 
 
 
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
     {path:'/dash-mis-cursos',element: <MisCursos/> },
     {path:'/curso-abierto', element: <CursoAbierto />},
     {path:'/preguntas-frecuentes', element: <FAQ />},
+    { path: '/viscurso', element: <VisCurso /> },
 
     // Admin Section
     {path:'/admin-panel', element:<Admin />},
