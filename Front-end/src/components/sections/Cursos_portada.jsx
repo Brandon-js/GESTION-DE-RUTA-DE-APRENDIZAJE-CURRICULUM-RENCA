@@ -16,7 +16,7 @@ const Cursos_portada = () => {
 
                     <div className="col-md-6" id="titulo-portada">
                         <div className="mb-5 text-center">
-                            <h1 >EXCEL COMPLETO</h1>
+                            <h1>Python para Machine Learning</h1>
                             <p>
                                 Con cursos al alcance de un CLICK
                             </p>

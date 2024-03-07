@@ -84,4 +84,30 @@ const inscribirCurso = async (req, res) => {
   }
 };
 
-export { createUsuario, loginUsuario, getUsuario, inscribirCurso };
+//Función que obtiene todos los usuarios dentro de la BD.
+const getUsuarios = async (req, res) => {
+  try {
+    const Users = await Usuario.find();
+    res.status(200).json(Users);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+//Función que actualiza un usuario
+const updateUsuario = async (req, res) => {
+  try {
+    const user = await Usuario.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    if (user) {
+      res.status(200).json({ message: "Usuario Actualizado" });
+    } else {
+      res.status(404).json({ message: "Usuario no encontrado" });
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+export { createUsuario, loginUsuario, getUsuario, inscribirCurso, getUsuarios, updateUsuario };

@@ -85,6 +85,12 @@ body.dark-mode #imr {
 body.dark-mode #cont-portada {
   color: #ffffff;
 }
+body.dark-mode #moon-btn-sb {
+  background-color: #4a86b9;
+}
+body.dark-mode .search-result {
+  background-color: #585858;
+}
 @media (min-width: 768px) {
   body.dark-mode #cont-portada {
     color: #000000;
