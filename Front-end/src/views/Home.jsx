@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Carousel_portada from '../components/carousel/Carousel_portada'
 import Data_home from '../components/sections/Data_home'
@@ -11,10 +11,17 @@ import Aprende_ritmo from '../components/sections/Aprende_ritmo'
 import Navbar_login from '../components/navbar/Navbar_login'
 
 
+
 const Home = () => {
+  const [usuarioLogeado, setUsuarioLogeado] = useState(false)
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    setUsuarioLogeado(!!token);
+  }, []);
   return (
     <>
-    <Navbar/>
+    {usuarioLogeado ? <Navbar_login /> : <Navbar />}
     <Carousel_portada />
     <Data_home />
     <Quienes_somos />
