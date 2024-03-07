@@ -4,6 +4,8 @@ import verificarToken from "../middlewares/jwt.js";
 
 const router = express.Router();
 
+router.get("/usuarios", usuarioController.getUsuarios);
+router.patch("/usuario/:id", usuarioController.updateUsuario);
 router.post("/usuario", usuarioController.createUsuario);
 router.post("/login", usuarioController.loginUsuario);
 router.get("/usuario", verificarToken, usuarioController.getUsuario);
