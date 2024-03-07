@@ -7,6 +7,7 @@ import SideBar from '../components/side-bar/SideBar'
 import SidenavUser from '../components/SidenavUser/SidenavUser'
 
 function DashBoard() {
+
     const [cursos, setCursos] = useState([]);
 
     useEffect(() => {
