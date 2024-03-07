@@ -1,6 +1,6 @@
 import React from 'react'
 import './Cursos_portada.css'
-
+import About_us from '../../assets/about_us.jpg'
 const Cursos_portada = () => {
   return (
     <>
