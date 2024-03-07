@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -26,6 +27,13 @@
   --secundarios: 'Poppins-MediumItalic', sans-serif;
 }
 
+/* .h1{
+  font-family: var(--titulos);
+} */
+
+/* *{
+  font-family: var(--secundarios);
+} */
 
 a {
   font-weight: 500;
@@ -76,6 +84,12 @@ body.dark-mode #imr {
 }
 body.dark-mode #cont-portada {
   color: #ffffff;
+}
+body.dark-mode #moon-btn-sb {
+  background-color: #4a86b9;
+}
+body.dark-mode .search-result {
+  background-color: #585858;
 }
 @media (min-width: 768px) {
   body.dark-mode #cont-portada {

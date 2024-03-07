@@ -67,6 +67,15 @@ const usuarioSchema = new Schema(
       type: String,
       required: true,
     },
+    nombre:{
+      type: String,
+      required: false
+    },
+  
+    apellido:{
+      type: String,
+      required: false
+    },
     cursos: [
       {
         type: Schema.Types.ObjectId,

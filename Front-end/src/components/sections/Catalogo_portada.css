@@ -55,6 +55,10 @@
     width: 93%;
     height: 80px;
 }
+.icon-categorias {
+    cursor: pointer;
+}
+
 
 @media (min-width: 576px) {
     #img-portada {
