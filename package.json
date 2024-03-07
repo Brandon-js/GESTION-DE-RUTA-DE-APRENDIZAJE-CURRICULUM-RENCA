@@ -1,0 +1,12 @@
+{
+  "name": "gestion-de-ruta-de-aprendizaje-curriculum-renca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "curso-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

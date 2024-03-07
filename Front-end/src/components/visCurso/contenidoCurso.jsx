@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import Boton_2 from "../botones/boton_2.jsx";   
+
 const ContenidoCurso = (leccion) => {
     console.log(leccion);
     return (
@@ -8,7 +9,7 @@ const ContenidoCurso = (leccion) => {
             </div>
             <div className="section-content">
                 <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQ_ULBq5jXVnAwBvDz0c31T2Yff0Z-BU-zNChQql4T-7EGlC26iPJgiBHmLGXcUUu0GUsklSTz_WtYN/embed?start=false&loop=false&delayms=3000"
+                    src="https://www.slideshare.net/slideshow/embed_code/key/tc9pVi4Rpue9E5?startSlide=1"
                     // eslint-disable-next-line react/no-unknown-property
                     toolbar="0" frameborder="0" allowfullscreen="true" mozallowfullscreen="true"
                     webkitallowfullscreen="true"></iframe>
@@ -20,9 +21,7 @@ const ContenidoCurso = (leccion) => {
                     que también te ayudará a desarrollar buenos hábitos de programación desde el principio.</p>
             </div>
             <div className="section-footer">
-                <button className="btn">
-                    Siguiente
-                </button>
+            <Boton_2 text='Continuar'/>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                     crossOrigin="anonymous"></script>

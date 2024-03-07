@@ -1,6 +1,6 @@
 import React from 'react'
 import img_aprende from '../../assets/aprende_ritmo.png'
-import Boton_2 from '../botones/Boton_2'
+import Boton_2 from '../botones/boton_2'
 import { Link } from 'react-router-dom'
 import './Aprende_ritmo.css'
 

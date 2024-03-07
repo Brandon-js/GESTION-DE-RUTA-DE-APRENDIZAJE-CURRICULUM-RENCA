@@ -1,0 +1,75 @@
+.breadcrumbsc,
+#bc-tittle {
+  position: fixed;
+  top: 0;
+  margin-top: 10px;
+  margin-left: 225px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: auto 40px;
+  padding-left: 40px;
+  width: 100%;
+  text-align: left;
+  color: black;
+  background-color: white;
+}
+
+.bc-tittle {
+  font-family: "heavitas";
+  font-size: 24px;
+  color: #000000;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.breadcrumb {
+  padding-top: 0px;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.grid-content {
+  top: 120px;
+  left: 225px;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #ffffff;
+  column-gap: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.form-tittle {
+  font-family: "Poppins";
+  font-style: italic;
+  font-size: 16px;
+  color: #000000;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.submit-btn {
+  outline: none;
+  font-family: "heavitas";
+  font-size: 14px;
+  border-color: transparent !important;
+  width: 170px;
+  height: 55px;
+  border-radius: 20px;
+  margin-bottom: 26px;
+  background-color: #0492d0;
+}
