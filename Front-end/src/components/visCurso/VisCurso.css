@@ -28,13 +28,6 @@
     text-decoration: underline;
 }
 
-.mb-2 {
-    color: white;
-    padding: 16px;
-    margin-top: 10px;
-    display: inline-block;
-    text-decoration: none;
-}
 
 
 
@@ -68,13 +61,7 @@
     
 }
 
-.mb-2:hover{
-    color: white;
 
-    background-color: #008bc638;
-
-    border-left: 6px solid #fda22d;
-}
 
 .custom-btn {
     background-color: transparent;

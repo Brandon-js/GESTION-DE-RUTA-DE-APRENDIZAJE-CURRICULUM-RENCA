@@ -1,6 +1,6 @@
 import './SidenavUser.css'
 import React from 'react';
-import logo from '../../assets/logo-renca.png'
+import logo from '../../assets/White-logo.png'
 import { Link } from 'react-router-dom';
 
 

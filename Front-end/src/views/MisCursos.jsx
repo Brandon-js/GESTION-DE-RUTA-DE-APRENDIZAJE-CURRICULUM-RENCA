@@ -4,8 +4,45 @@ import ProgresDash from '../components/curso-progreso/ProgresDash'
 import '../components/curso-progreso/ProgresDash.css'
 import CursoAbierto from '../components/CursoAbierto/CursoAbierto'
 import SidenavUser from '../components/SidenavUser/SidenavUser'
+import { useEffect,useState } from 'react'
+
 
 function MisCursos() {
+
+  const [cursos, setCursos] = useState([]);
+
+  useEffect(() => {
+      const fetchCursos = async () => {
+          const cursosLocalStorage = localStorage.getItem('cursos');
+          let ids = [];
+          if (cursosLocalStorage) {
+              ids = JSON.parse(cursosLocalStorage);
+          }
+
+          const requestBody = {
+              ids: ids
+          };
+
+          try {
+              const response = await fetch('http://localhost:8000/api/cursos-ids', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(requestBody),
+              });
+              if (response.ok) {
+                  const data = await response.json();
+                  setCursos(data);
+              }
+          } catch (error) {
+              console.error(error);
+          }
+      }
+
+      fetchCursos();
+  }, [])
+
   return (
     <>
     <div className='row'>
@@ -25,16 +62,11 @@ function MisCursos() {
 
                               </div>
                             </div>
-        <div>
-        <ProgresDash tituloCurso ="Titulo Curso" />
-        <ProgresDash tituloCurso ="Titulo Curso"/>
-        <ProgresDash tituloCurso ="Titulo Curso"/>
-        <ProgresDash tituloCurso ="Titulo Curso"/>
-        <ProgresDash tituloCurso ="Titulo Curso"/>
-        <ProgresDash tituloCurso ="Titulo Curso"/>
-        
-
-        </div>
+                            <div>
+                        {cursos.map((curso) => (
+                            <ProgresDash key={curso._id} infoCurso={curso} />
+                        ))}
+                    </div>
        
     </div>
     </div>

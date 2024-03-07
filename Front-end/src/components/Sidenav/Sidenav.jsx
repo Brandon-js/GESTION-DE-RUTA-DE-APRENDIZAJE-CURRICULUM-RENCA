@@ -1,7 +1,7 @@
 import './Sidenav.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo_Renca from '../../assets/logo-renca.png'
+import Logo_Renca from '../../assets/White-logo.png'
 
 function Sidenav() {
     return (
