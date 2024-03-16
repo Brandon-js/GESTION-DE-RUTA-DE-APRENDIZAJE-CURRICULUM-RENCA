@@ -1,8 +1,14 @@
 /* En tu archivo CSS Admin.css */
+<<<<<<< Updated upstream
 
 .container-admin-panel {
     margin-left: 30px; /* Ajusta el margen izquierdo para compensar el sidebar */
     padding: 20px;/* Añade un poco de espacio alrededor del contenido */
+=======
+.container {
+    margin-left: 30px; /* Ajusta el margen izquierdo para compensar el sidebar */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+>>>>>>> Stashed changes
   }
   
   .dataContainer {
@@ -19,13 +25,33 @@
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Agrega sombra */
   }
   
+<<<<<<< Updated upstream
 
 /* Admin.css */
+=======
+  .green {
+    background-color: green; /* Cuadros verdes */
+  }
+  
+  .orange {
+    background-color: orange; /* Cuadros naranjas */
+  }
+  
+  .blue {
+    background-color: blue; /* Cuadros azules */
+  }
+  
+
+>>>>>>> Stashed changes
 
 
 .reviewSection, .pendingUsersSection {
     margin-top: 40px;
+<<<<<<< Updated upstream
     width: 80%;
+=======
+    width: calc(100% - 250px); /* Resta el ancho del sidebar */
+>>>>>>> Stashed changes
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Distribuye los contenedores horizontalmente */
@@ -33,10 +59,14 @@
   }
   
   .reviewContainer, .userContainer {
+<<<<<<< Updated upstream
     display: flex; /* Habilita Flexbox */
     justify-content: space-between; /* Separa el contenido y el botón */
     align-items: center; /* Centra los elementos verticalmente */
     width: 100%; /* Mantiene el ancho completo */
+=======
+    width: 100%; /* Calcula el ancho de cada contenedor */
+>>>>>>> Stashed changes
     margin: 20px;
     background: #ffffff;
     padding: 20px;
@@ -61,5 +91,12 @@
   }
   
   .editButton:hover {
+<<<<<<< Updated upstream
     background-color: #1976D2; /* Azul oscuro */
 }
+=======
+    background-color: #1976D2; /* Azul oscuro */
+  }
+
+  
+>>>>>>> Stashed changes
